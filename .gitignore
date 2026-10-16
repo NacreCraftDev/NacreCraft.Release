@@ -1,7 +1,7 @@
-# 本地构建脚本 不进仓库
 Build.ps1
 
 bin/
 obj/
 .pslocal/
 .psctx.json
+*.pdb
