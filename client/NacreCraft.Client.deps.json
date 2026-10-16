@@ -1,0 +1,1008 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v10.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v10.0": {
+      "NacreCraft.Client/0.1.0": {
+        "dependencies": {
+          "DnsClient": "1.8.0",
+          "NacreCraft.Game": "0.1.0",
+          "Silk.NET.Input": "2.23.0",
+          "Silk.NET.Vulkan": "2.23.0",
+          "Silk.NET.Vulkan.Extensions.KHR": "2.23.0",
+          "Silk.NET.Windowing.Glfw": "2.23.0",
+          "StbImageSharp": "2.30.15",
+          "StbTrueTypeSharp": "1.26.9",
+          "Veldrid.SPIRV": "1.0.15"
+        },
+        "runtime": {
+          "NacreCraft.Client.dll": {}
+        }
+      },
+      "DnsClient/1.8.0": {
+        "runtime": {
+          "lib/net8.0/DnsClient.dll": {
+            "assemblyVersion": "1.8.0.0",
+            "fileVersion": "1.8.0.0"
+          }
+        }
+      },
+      "K4os.Compression.LZ4/1.3.8": {
+        "runtime": {
+          "lib/net6.0/K4os.Compression.LZ4.dll": {
+            "assemblyVersion": "1.3.8.0",
+            "fileVersion": "1.3.8.0"
+          }
+        }
+      },
+      "K4os.Compression.LZ4.Streams/1.3.8": {
+        "dependencies": {
+          "K4os.Compression.LZ4": "1.3.8",
+          "K4os.Hash.xxHash": "1.0.8"
+        },
+        "runtime": {
+          "lib/net6.0/K4os.Compression.LZ4.Streams.dll": {
+            "assemblyVersion": "1.3.8.0",
+            "fileVersion": "1.3.8.0"
+          }
+        }
+      },
+      "K4os.Hash.xxHash/1.0.8": {
+        "runtime": {
+          "lib/net6.0/K4os.Hash.xxHash.dll": {
+            "assemblyVersion": "1.0.8.0",
+            "fileVersion": "1.0.8.0"
+          }
+        }
+      },
+      "Libuv/1.9.1": {
+        "runtimeTargets": {
+          "runtimes/debian-x64/native/libuv.so": {
+            "rid": "debian-x64",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/fedora-x64/native/libuv.so": {
+            "rid": "fedora-x64",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/opensuse-x64/native/libuv.so": {
+            "rid": "opensuse-x64",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/osx/native/libuv.dylib": {
+            "rid": "osx",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/rhel-x64/native/libuv.so": {
+            "rid": "rhel-x64",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/win7-arm/native/libuv.dll": {
+            "rid": "win7-arm",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/win7-x64/native/libuv.dll": {
+            "rid": "win7-x64",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/win7-x86/native/libuv.dll": {
+            "rid": "win7-x86",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          }
+        }
+      },
+      "Microsoft.CodeAnalysis.Common/1.3.0": {
+        "runtime": {
+          "lib/netstandard1.3/Microsoft.CodeAnalysis.dll": {
+            "assemblyVersion": "1.3.0.0",
+            "fileVersion": "1.3.0.60613"
+          }
+        }
+      },
+      "Microsoft.CodeAnalysis.CSharp/1.3.0": {
+        "dependencies": {
+          "Microsoft.CodeAnalysis.Common": "1.3.0"
+        },
+        "runtime": {
+          "lib/netstandard1.3/Microsoft.CodeAnalysis.CSharp.dll": {
+            "assemblyVersion": "1.3.0.0",
+            "fileVersion": "1.3.0.60613"
+          }
+        }
+      },
+      "Microsoft.CodeAnalysis.VisualBasic/1.3.0": {
+        "dependencies": {
+          "Microsoft.CodeAnalysis.Common": "1.3.0"
+        },
+        "runtime": {
+          "lib/netstandard1.3/Microsoft.CodeAnalysis.VisualBasic.dll": {
+            "assemblyVersion": "1.3.0.0",
+            "fileVersion": "1.3.0.60613"
+          }
+        }
+      },
+      "Microsoft.Diagnostics.NETCore.Client/0.2.745401": {
+        "dependencies": {
+          "Microsoft.Extensions.Logging.Abstractions": "8.0.3"
+        },
+        "runtime": {
+          "lib/net8.0/Microsoft.Diagnostics.NETCore.Client.dll": {
+            "assemblyVersion": "0.2.14.45401",
+            "fileVersion": "0.2.14.45401"
+          }
+        }
+      },
+      "Microsoft.DotNet.PlatformAbstractions/3.1.6": {
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.DotNet.PlatformAbstractions.dll": {
+            "assemblyVersion": "3.1.6.0",
+            "fileVersion": "3.100.620.31604"
+          }
+        }
+      },
+      "Microsoft.Extensions.DependencyInjection.Abstractions/8.0.2": {
+        "runtime": {
+          "lib/net8.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll": {
+            "assemblyVersion": "8.0.0.0",
+            "fileVersion": "8.0.1024.46610"
+          }
+        }
+      },
+      "Microsoft.Extensions.DependencyModel/9.0.9": {
+        "runtime": {
+          "lib/net9.0/Microsoft.Extensions.DependencyModel.dll": {
+            "assemblyVersion": "9.0.0.9",
+            "fileVersion": "9.0.925.41916"
+          }
+        }
+      },
+      "Microsoft.Extensions.Logging.Abstractions/8.0.3": {
+        "dependencies": {
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "8.0.2"
+        },
+        "runtime": {
+          "lib/net8.0/Microsoft.Extensions.Logging.Abstractions.dll": {
+            "assemblyVersion": "8.0.0.0",
+            "fileVersion": "8.0.1325.6609"
+          }
+        }
+      },
+      "Microsoft.NETCore.App/1.0.5": {
+        "dependencies": {
+          "Libuv": "1.9.1",
+          "Microsoft.CodeAnalysis.CSharp": "1.3.0",
+          "Microsoft.CodeAnalysis.VisualBasic": "1.3.0"
+        }
+      },
+      "NativeLibraryLoader/1.0.10": {
+        "dependencies": {
+          "Microsoft.Extensions.DependencyModel": "9.0.9"
+        },
+        "runtime": {
+          "lib/netstandard2.0/NativeLibraryLoader.dll": {
+            "assemblyVersion": "1.0.10.0",
+            "fileVersion": "1.0.10.0"
+          }
+        }
+      },
+      "SharpDX/4.0.1": {
+        "dependencies": {
+          "Microsoft.NETCore.App": "1.0.5"
+        },
+        "runtime": {
+          "lib/netcoreapp1.0/SharpDX.dll": {
+            "assemblyVersion": "4.0.1.0",
+            "fileVersion": "4.0.1.0"
+          }
+        }
+      },
+      "SharpDX.D3DCompiler/4.0.1": {
+        "dependencies": {
+          "Microsoft.NETCore.App": "1.0.5",
+          "SharpDX": "4.0.1"
+        },
+        "runtime": {
+          "lib/netcoreapp1.0/SharpDX.D3DCompiler.dll": {
+            "assemblyVersion": "4.0.1.0",
+            "fileVersion": "4.0.1.0"
+          }
+        }
+      },
+      "SharpDX.Direct3D11/4.0.1": {
+        "dependencies": {
+          "Microsoft.NETCore.App": "1.0.5",
+          "SharpDX": "4.0.1",
+          "SharpDX.DXGI": "4.0.1"
+        },
+        "runtime": {
+          "lib/netcoreapp1.0/SharpDX.Direct3D11.dll": {
+            "assemblyVersion": "4.0.1.0",
+            "fileVersion": "4.0.1.0"
+          }
+        }
+      },
+      "SharpDX.DXGI/4.0.1": {
+        "dependencies": {
+          "Microsoft.NETCore.App": "1.0.5",
+          "SharpDX": "4.0.1"
+        },
+        "runtime": {
+          "lib/netcoreapp1.0/SharpDX.DXGI.dll": {
+            "assemblyVersion": "4.0.1.0",
+            "fileVersion": "4.0.1.0"
+          }
+        }
+      },
+      "Silk.NET.Core/2.23.0": {
+        "dependencies": {
+          "Microsoft.DotNet.PlatformAbstractions": "3.1.6",
+          "Microsoft.Extensions.DependencyModel": "9.0.9"
+        },
+        "runtime": {
+          "lib/net6.0/Silk.NET.Core.dll": {
+            "assemblyVersion": "2.23.0.0",
+            "fileVersion": "2.23.0.0"
+          }
+        }
+      },
+      "Silk.NET.GLFW/2.23.0": {
+        "dependencies": {
+          "Silk.NET.Core": "2.23.0",
+          "Ultz.Native.GLFW": "3.4.0"
+        },
+        "runtime": {
+          "lib/net5.0/Silk.NET.GLFW.dll": {
+            "assemblyVersion": "2.23.0.0",
+            "fileVersion": "2.23.0.0"
+          }
+        }
+      },
+      "Silk.NET.Input/2.23.0": {
+        "dependencies": {
+          "Silk.NET.Input.Common": "2.23.0",
+          "Silk.NET.Input.Glfw": "2.23.0"
+        }
+      },
+      "Silk.NET.Input.Common/2.23.0": {
+        "dependencies": {
+          "Silk.NET.Windowing.Common": "2.23.0"
+        },
+        "runtime": {
+          "lib/net5.0/Silk.NET.Input.Common.dll": {
+            "assemblyVersion": "2.23.0.0",
+            "fileVersion": "2.23.0.0"
+          }
+        }
+      },
+      "Silk.NET.Input.Glfw/2.23.0": {
+        "dependencies": {
+          "Silk.NET.Input.Common": "2.23.0",
+          "Silk.NET.Windowing.Glfw": "2.23.0"
+        },
+        "runtime": {
+          "lib/net5.0/Silk.NET.Input.Glfw.dll": {
+            "assemblyVersion": "2.23.0.0",
+            "fileVersion": "2.23.0.0"
+          }
+        }
+      },
+      "Silk.NET.Maths/2.23.0": {
+        "runtime": {
+          "lib/net5.0/Silk.NET.Maths.dll": {
+            "assemblyVersion": "2.23.0.0",
+            "fileVersion": "2.23.0.0"
+          }
+        }
+      },
+      "Silk.NET.Vulkan/2.23.0": {
+        "dependencies": {
+          "Silk.NET.Core": "2.23.0"
+        },
+        "runtime": {
+          "lib/net5.0/Silk.NET.Vulkan.dll": {
+            "assemblyVersion": "2.23.0.0",
+            "fileVersion": "2.23.0.0"
+          }
+        }
+      },
+      "Silk.NET.Vulkan.Extensions.KHR/2.23.0": {
+        "dependencies": {
+          "Silk.NET.Core": "2.23.0",
+          "Silk.NET.Vulkan": "2.23.0"
+        },
+        "runtime": {
+          "lib/net5.0/Silk.NET.Vulkan.Extensions.KHR.dll": {
+            "assemblyVersion": "2.23.0.0",
+            "fileVersion": "2.23.0.0"
+          }
+        }
+      },
+      "Silk.NET.Windowing.Common/2.23.0": {
+        "dependencies": {
+          "Silk.NET.Core": "2.23.0",
+          "Silk.NET.Maths": "2.23.0"
+        },
+        "runtime": {
+          "lib/netstandard2.1/Silk.NET.Windowing.Common.dll": {
+            "assemblyVersion": "2.23.0.0",
+            "fileVersion": "2.23.0.0"
+          }
+        }
+      },
+      "Silk.NET.Windowing.Glfw/2.23.0": {
+        "dependencies": {
+          "Silk.NET.GLFW": "2.23.0",
+          "Silk.NET.Windowing.Common": "2.23.0"
+        },
+        "runtime": {
+          "lib/net5.0/Silk.NET.Windowing.Glfw.dll": {
+            "assemblyVersion": "2.23.0.0",
+            "fileVersion": "2.23.0.0"
+          }
+        }
+      },
+      "StbImageSharp/2.30.15": {
+        "runtime": {
+          "lib/netstandard2.0/StbImageSharp.dll": {
+            "assemblyVersion": "2.30.15.0",
+            "fileVersion": "2.30.15.0"
+          }
+        }
+      },
+      "StbTrueTypeSharp/1.26.9": {
+        "runtime": {
+          "lib/netstandard2.0/StbTrueTypeSharp.dll": {
+            "assemblyVersion": "1.26.9.0",
+            "fileVersion": "1.26.9.0"
+          }
+        }
+      },
+      "Ultz.Native.GLFW/3.4.0": {
+        "runtimeTargets": {
+          "runtimes/linux-arm/native/libglfw.so.3": {
+            "rid": "linux-arm",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/linux-arm64/native/libglfw.so.3": {
+            "rid": "linux-arm64",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/linux-x64/native/libglfw.so.3": {
+            "rid": "linux-x64",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/osx-arm64/native/libglfw.3.dylib": {
+            "rid": "osx-arm64",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/osx-x64/native/libglfw.3.dylib": {
+            "rid": "osx-x64",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/win-arm64/native/glfw3.dll": {
+            "rid": "win-arm64",
+            "assetType": "native",
+            "fileVersion": "3.4.0.0"
+          },
+          "runtimes/win-x64/native/glfw3.dll": {
+            "rid": "win-x64",
+            "assetType": "native",
+            "fileVersion": "3.4.0.0"
+          },
+          "runtimes/win-x86/native/glfw3.dll": {
+            "rid": "win-x86",
+            "assetType": "native",
+            "fileVersion": "3.4.0.0"
+          }
+        }
+      },
+      "Veldrid/4.8.0": {
+        "dependencies": {
+          "NativeLibraryLoader": "1.0.10",
+          "SharpDX": "4.0.1",
+          "SharpDX.D3DCompiler": "4.0.1",
+          "SharpDX.DXGI": "4.0.1",
+          "SharpDX.Direct3D11": "4.0.1",
+          "Veldrid.MetalBindings": "4.8.0",
+          "Veldrid.OpenGLBindings": "4.8.0",
+          "Vk": "1.0.22"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Veldrid.dll": {
+            "assemblyVersion": "4.8.0.0",
+            "fileVersion": "4.8.0.3"
+          }
+        }
+      },
+      "Veldrid.MetalBindings/4.8.0": {
+        "runtime": {
+          "lib/netstandard2.0/Veldrid.MetalBindings.dll": {
+            "assemblyVersion": "4.8.0.0",
+            "fileVersion": "4.8.0.3"
+          }
+        }
+      },
+      "Veldrid.OpenGLBindings/4.8.0": {
+        "runtime": {
+          "lib/netstandard2.0/Veldrid.OpenGLBindings.dll": {
+            "assemblyVersion": "4.8.0.0",
+            "fileVersion": "4.8.0.3"
+          }
+        }
+      },
+      "Veldrid.SPIRV/1.0.15": {
+        "dependencies": {
+          "Veldrid": "4.8.0"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Veldrid.SPIRV.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.15.1"
+          }
+        },
+        "runtimeTargets": {
+          "runtimes/linux-x64/native/libveldrid-spirv.so": {
+            "rid": "linux-x64",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/osx/native/libveldrid-spirv.dylib": {
+            "rid": "osx",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/win-x64/native/libveldrid-spirv.dll": {
+            "rid": "win-x64",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/win-x86/native/libveldrid-spirv.dll": {
+            "rid": "win-x86",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          }
+        }
+      },
+      "Vk/1.0.22": {
+        "runtime": {
+          "lib/netstandard1.4/vk.dll": {
+            "assemblyVersion": "1.0.22.0",
+            "fileVersion": "1.0.22.0"
+          }
+        }
+      },
+      "ZstdSharp.Port/0.8.8": {
+        "runtime": {
+          "lib/net9.0/ZstdSharp.dll": {
+            "assemblyVersion": "0.8.8.0",
+            "fileVersion": "0.8.8.0"
+          }
+        }
+      },
+      "NacreCraft/0.1.0": {
+        "dependencies": {
+          "NacreCraft.Commands": "0.1.0",
+          "NacreCraft.Network": "0.1.0",
+          "NacreCraft.Registry": "0.1.0",
+          "NacreCraft.Resources": "0.1.0",
+          "NacreCraft.Storage": "0.1.0"
+        },
+        "runtime": {
+          "NacreCraft.dll": {
+            "assemblyVersion": "0.1.0.0",
+            "fileVersion": "0.1.0.0"
+          }
+        }
+      },
+      "NacreCraft.Codec/0.1.0": {
+        "runtime": {
+          "NacreCraft.Codec.dll": {
+            "assemblyVersion": "0.1.0.0",
+            "fileVersion": "0.1.0.0"
+          }
+        }
+      },
+      "NacreCraft.Commands/0.1.0": {
+        "dependencies": {
+          "NacreCraft.Nbt": "0.1.0",
+          "NacreCraft.Registry": "0.1.0",
+          "NacreCraft.Util": "0.1.0"
+        },
+        "runtime": {
+          "NacreCraft.Commands.dll": {
+            "assemblyVersion": "0.1.0.0",
+            "fileVersion": "0.1.0.0"
+          }
+        }
+      },
+      "NacreCraft.Config/0.1.0": {
+        "runtime": {
+          "NacreCraft.Config.dll": {
+            "assemblyVersion": "0.1.0.0",
+            "fileVersion": "0.1.0.0"
+          }
+        }
+      },
+      "NacreCraft.DataFixer/0.1.0": {
+        "dependencies": {
+          "NacreCraft.Codec": "0.1.0",
+          "NacreCraft.Commands": "0.1.0",
+          "NacreCraft.Nbt": "0.1.0",
+          "NacreCraft.Util": "0.1.0"
+        },
+        "runtime": {
+          "NacreCraft.DataFixer.dll": {
+            "assemblyVersion": "0.1.0.0",
+            "fileVersion": "0.1.0.0"
+          }
+        }
+      },
+      "NacreCraft.Game/0.1.0": {
+        "dependencies": {
+          "NacreCraft": "0.1.0",
+          "NacreCraft.Commands": "0.1.0",
+          "NacreCraft.DataFixer": "0.1.0",
+          "NacreCraft.Network": "0.1.0",
+          "NacreCraft.Resources": "0.1.0"
+        },
+        "runtime": {
+          "NacreCraft.Game.dll": {
+            "assemblyVersion": "0.1.0.0",
+            "fileVersion": "0.1.0.0"
+          }
+        }
+      },
+      "NacreCraft.Nbt/0.1.0": {
+        "dependencies": {
+          "NacreCraft.Codec": "0.1.0",
+          "NacreCraft.Config": "0.1.0",
+          "NacreCraft.Primitives": "0.1.0",
+          "NacreCraft.Util": "0.1.0"
+        },
+        "runtime": {
+          "NacreCraft.Nbt.dll": {
+            "assemblyVersion": "0.1.0.0",
+            "fileVersion": "0.1.0.0"
+          }
+        }
+      },
+      "NacreCraft.Network/0.1.0": {
+        "dependencies": {
+          "NacreCraft.Commands": "0.1.0",
+          "NacreCraft.Config": "0.1.0",
+          "NacreCraft.DataFixer": "0.1.0",
+          "NacreCraft.Nbt": "0.1.0",
+          "NacreCraft.Registry": "0.1.0",
+          "NacreCraft.Util": "0.1.0"
+        },
+        "runtime": {
+          "NacreCraft.Network.dll": {
+            "assemblyVersion": "0.1.0.0",
+            "fileVersion": "0.1.0.0"
+          }
+        }
+      },
+      "NacreCraft.Primitives/0.1.0": {
+        "runtime": {
+          "NacreCraft.Primitives.dll": {
+            "assemblyVersion": "0.1.0.0",
+            "fileVersion": "0.1.0.0"
+          }
+        }
+      },
+      "NacreCraft.Registry/0.1.0": {
+        "dependencies": {
+          "NacreCraft.Codec": "0.1.0",
+          "NacreCraft.Nbt": "0.1.0",
+          "NacreCraft.Primitives": "0.1.0",
+          "NacreCraft.Util": "0.1.0"
+        },
+        "runtime": {
+          "NacreCraft.Registry.dll": {
+            "assemblyVersion": "0.1.0.0",
+            "fileVersion": "0.1.0.0"
+          }
+        }
+      },
+      "NacreCraft.Resources/0.1.0": {
+        "dependencies": {
+          "NacreCraft.Registry": "0.1.0",
+          "NacreCraft.Util": "0.1.0"
+        },
+        "runtime": {
+          "NacreCraft.Resources.dll": {
+            "assemblyVersion": "0.1.0.0",
+            "fileVersion": "0.1.0.0"
+          }
+        }
+      },
+      "NacreCraft.Storage/0.1.0": {
+        "dependencies": {
+          "K4os.Compression.LZ4": "1.3.8",
+          "K4os.Compression.LZ4.Streams": "1.3.8",
+          "NacreCraft.Config": "0.1.0",
+          "NacreCraft.DataFixer": "0.1.0",
+          "NacreCraft.Nbt": "0.1.0",
+          "NacreCraft.Primitives": "0.1.0",
+          "NacreCraft.Registry": "0.1.0",
+          "NacreCraft.Util": "0.1.0"
+        },
+        "runtime": {
+          "NacreCraft.Storage.dll": {
+            "assemblyVersion": "0.1.0.0",
+            "fileVersion": "0.1.0.0"
+          }
+        }
+      },
+      "NacreCraft.Util/0.1.0": {
+        "dependencies": {
+          "Microsoft.Diagnostics.NETCore.Client": "0.2.745401",
+          "NacreCraft.Codec": "0.1.0",
+          "NacreCraft.Config": "0.1.0",
+          "NacreCraft.Primitives": "0.1.0",
+          "ZstdSharp.Port": "0.8.8"
+        },
+        "runtime": {
+          "NacreCraft.Util.dll": {
+            "assemblyVersion": "0.1.0.0",
+            "fileVersion": "0.1.0.0"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "NacreCraft.Client/0.1.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "DnsClient/1.8.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-RRwtaCXkXWsx0mmsReGDqCbRLtItfUbkRJlet1FpdciVhyMGKcPd57T1+8Jki9ojHlq9fntVhXQroOOgRak8DQ==",
+      "path": "dnsclient/1.8.0",
+      "hashPath": "dnsclient.1.8.0.nupkg.sha512"
+    },
+    "K4os.Compression.LZ4/1.3.8": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-LhwlPa7c1zs1OV2XadMtAWdImjLIsqFJPoRcIWAadSRn0Ri1DepK65UbWLPmt4riLqx2d40xjXRk0ogpqNtK7g==",
+      "path": "k4os.compression.lz4/1.3.8",
+      "hashPath": "k4os.compression.lz4.1.3.8.nupkg.sha512"
+    },
+    "K4os.Compression.LZ4.Streams/1.3.8": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-P15qr8dZAeo9GvYbUIPEYFQ0MEJ0i5iqr37wsYeRC3la2uCldOoeCa6to0CZ1taiwxIV+Mk8NGuZi+4iWivK9w==",
+      "path": "k4os.compression.lz4.streams/1.3.8",
+      "hashPath": "k4os.compression.lz4.streams.1.3.8.nupkg.sha512"
+    },
+    "K4os.Hash.xxHash/1.0.8": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-Wp2F7BamQ2Q/7Hk834nV9vRQapgcr8kgv9Jvfm8J3D0IhDqZMMl+a2yxUq5ltJitvXvQfB8W6K4F4fCbw/P6YQ==",
+      "path": "k4os.hash.xxhash/1.0.8",
+      "hashPath": "k4os.hash.xxhash.1.0.8.nupkg.sha512"
+    },
+    "Libuv/1.9.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-uqX2Frwf9PW8MaY7PRNY6HM5BpW1D8oj1EdqzrmbEFD5nH63Yat3aEjN/tws6Tw6Fk7LwmLBvtUh32tTeTaHiA==",
+      "path": "libuv/1.9.1",
+      "hashPath": "libuv.1.9.1.nupkg.sha512"
+    },
+    "Microsoft.CodeAnalysis.Common/1.3.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-V09G35cs0CT1C4Dr1IEOh8IGfnWALEVAOO5JXsqagxXwmYR012TlorQ+vx2eXxfZRKs3gAS/r92gN9kRBLba5A==",
+      "path": "microsoft.codeanalysis.common/1.3.0",
+      "hashPath": "microsoft.codeanalysis.common.1.3.0.nupkg.sha512"
+    },
+    "Microsoft.CodeAnalysis.CSharp/1.3.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-BgWDIAbSFsHuGeLSn/rljLi51nXqkSo4DZ0qEIrHyPVasrhxEVq7aV8KKZ3HEfSFB+GIhBmOogE+mlOLYg19eg==",
+      "path": "microsoft.codeanalysis.csharp/1.3.0",
+      "hashPath": "microsoft.codeanalysis.csharp.1.3.0.nupkg.sha512"
+    },
+    "Microsoft.CodeAnalysis.VisualBasic/1.3.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-Sf3k8PkTkWqBmXnnblJbvb7ewO6mJzX6WO2t7m04BmOY5qBq6yhhyXnn/BMM+QCec3Arw3X35Zd8f9eBql0qgg==",
+      "path": "microsoft.codeanalysis.visualbasic/1.3.0",
+      "hashPath": "microsoft.codeanalysis.visualbasic.1.3.0.nupkg.sha512"
+    },
+    "Microsoft.Diagnostics.NETCore.Client/0.2.745401": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-M+XXKCFl5JZxcaopsXQgL3ItTQW3ZNlM9MR8YY9wX2/VvjVBDBfShzmiKmFq3Pl7WmA+l1jzE2OoB714gItLxA==",
+      "path": "microsoft.diagnostics.netcore.client/0.2.745401",
+      "hashPath": "microsoft.diagnostics.netcore.client.0.2.745401.nupkg.sha512"
+    },
+    "Microsoft.DotNet.PlatformAbstractions/3.1.6": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-jek4XYaQ/PGUwDKKhwR8K47Uh1189PFzMeLqO83mXrXQVIpARZCcfuDedH50YDTepBkfijCZN5U/vZi++erxtg==",
+      "path": "microsoft.dotnet.platformabstractions/3.1.6",
+      "hashPath": "microsoft.dotnet.platformabstractions.3.1.6.nupkg.sha512"
+    },
+    "Microsoft.Extensions.DependencyInjection.Abstractions/8.0.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-3iE7UF7MQkCv1cxzCahz+Y/guQbTqieyxyaWKhrRO91itI9cOKO76OHeQDahqG4MmW5umr3CcCvGmK92lWNlbg==",
+      "path": "microsoft.extensions.dependencyinjection.abstractions/8.0.2",
+      "hashPath": "microsoft.extensions.dependencyinjection.abstractions.8.0.2.nupkg.sha512"
+    },
+    "Microsoft.Extensions.DependencyModel/9.0.9": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-fNGvKct2De8ghm0Bpfq0iWthtzIWabgOTi+gJhNOPhNJIowXNEUE2eZNW/zNCzrHVA3PXg2yZ+3cWZndC2IqYA==",
+      "path": "microsoft.extensions.dependencymodel/9.0.9",
+      "hashPath": "microsoft.extensions.dependencymodel.9.0.9.nupkg.sha512"
+    },
+    "Microsoft.Extensions.Logging.Abstractions/8.0.3": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-dL0QGToTxggRLMYY4ZYX5AMwBb+byQBd/5dMiZE07Nv73o6I5Are3C7eQTh7K2+A4ct0PVISSr7TZANbiNb2yQ==",
+      "path": "microsoft.extensions.logging.abstractions/8.0.3",
+      "hashPath": "microsoft.extensions.logging.abstractions.8.0.3.nupkg.sha512"
+    },
+    "Microsoft.NETCore.App/1.0.5": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-rqd+4QNUIdrauKaP8KVo2Ut5OeEGoyOsAMZr7u1IEtSRx5LeA1omVCLpY0TJ5Z47jfMm/MRuD/RG5Ahg8WwX2w==",
+      "path": "microsoft.netcore.app/1.0.5",
+      "hashPath": "microsoft.netcore.app.1.0.5.nupkg.sha512"
+    },
+    "NativeLibraryLoader/1.0.10": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-CX6y+nT8EQNdcOq/8nQJ+kKyQDTv+p6Z65n1nFoNvmvWfMlTcmScvabJUY0idMrEXhTJVmSY2L6fsQ7KX6pzLQ==",
+      "path": "nativelibraryloader/1.0.10",
+      "hashPath": "nativelibraryloader.1.0.10.nupkg.sha512"
+    },
+    "SharpDX/4.0.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-8YA1VFg1/K8Emb8FEZDobojcv1BLuppVo7CRJQEgA1V748VIMPBru0i0OnsCjLSThzTn7juOvH85qjFL9Grl1w==",
+      "path": "sharpdx/4.0.1",
+      "hashPath": "sharpdx.4.0.1.nupkg.sha512"
+    },
+    "SharpDX.D3DCompiler/4.0.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-D3OzwToJ8j8dDOeJxUGUxJFwSnTQ89jJejSQkhuIsaBGh8Wd8DhQzmcsKzQaoLnzLBECS1Y37y9bGQaw3CnhxA==",
+      "path": "sharpdx.d3dcompiler/4.0.1",
+      "hashPath": "sharpdx.d3dcompiler.4.0.1.nupkg.sha512"
+    },
+    "SharpDX.Direct3D11/4.0.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-7xIfeAhxPhbPgSiREfFbOOwIWonUt2GHR7XZN5p2DJMWuqjl0+h1oo2/sF+SH/c6D6APjdbt0J+dYSzoV0PA/w==",
+      "path": "sharpdx.direct3d11/4.0.1",
+      "hashPath": "sharpdx.direct3d11.4.0.1.nupkg.sha512"
+    },
+    "SharpDX.DXGI/4.0.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-Av/kToUkVR1tDtIP9zmDGwCuCtyL04+PP7kes6aABzky1Y9vT03kR7mDeE83gl+E8GUmMMbVXbQ4AG2CVb66sg==",
+      "path": "sharpdx.dxgi/4.0.1",
+      "hashPath": "sharpdx.dxgi.4.0.1.nupkg.sha512"
+    },
+    "Silk.NET.Core/2.23.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-D7AT/nnwlB+4RZ84XY8QNGBZMJI5z9l4CSSETIJ1wCfRJzRt/341y3MRZ4HbnFz4r/IGaWOEZr86iE+0/65yyQ==",
+      "path": "silk.net.core/2.23.0",
+      "hashPath": "silk.net.core.2.23.0.nupkg.sha512"
+    },
+    "Silk.NET.GLFW/2.23.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-UIs4sH57xlPUNHQ/1bt9rymPWlGy8IMDCNv86h0iM4TOA1CkIx0XM/n/tA4AReh1zQkNrvkxPEdZ3Blvy1dyXg==",
+      "path": "silk.net.glfw/2.23.0",
+      "hashPath": "silk.net.glfw.2.23.0.nupkg.sha512"
+    },
+    "Silk.NET.Input/2.23.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-Xzl+tVwAp2eEd8blmGQjmJrsZPnp3PWG0KJjiAQHaY2Zr/ELVWeAROKXmZdCAvexzmte2JVGEy/dxnMycbxlpg==",
+      "path": "silk.net.input/2.23.0",
+      "hashPath": "silk.net.input.2.23.0.nupkg.sha512"
+    },
+    "Silk.NET.Input.Common/2.23.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-QbJVV7kFBHEByayXCYdJtXXI9Sp4a+QAf0IdGV6uCWkFYcEmqBYW3aaNGvFOdSwTBDbHL5T/OtOCrGh4qYhk7A==",
+      "path": "silk.net.input.common/2.23.0",
+      "hashPath": "silk.net.input.common.2.23.0.nupkg.sha512"
+    },
+    "Silk.NET.Input.Glfw/2.23.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-KGHYqsv/IQRJtD6dloYh2tN4CkaM40vxM2kj0cGKBoCQiBDYHHhJiyDTyMPx0W7Fz5IgnhnG42ELmIAa0DH69A==",
+      "path": "silk.net.input.glfw/2.23.0",
+      "hashPath": "silk.net.input.glfw.2.23.0.nupkg.sha512"
+    },
+    "Silk.NET.Maths/2.23.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-r8PdIVzME8EH0qAgbmRPO87I4GfgR2j8TofT7EMuRJDf1QluoQwnVypDoFJjQ2ZBSRsGYk5unYxxogI05Ogsmw==",
+      "path": "silk.net.maths/2.23.0",
+      "hashPath": "silk.net.maths.2.23.0.nupkg.sha512"
+    },
+    "Silk.NET.Vulkan/2.23.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-3/irtlSWXZ3eTi8N6nelI6L34NTB8ZJHpqVMNzZx2aX7Ek9YEQ34NoQW8/Tljrtmkg8KRhHW8hKTEzZaKV8PgA==",
+      "path": "silk.net.vulkan/2.23.0",
+      "hashPath": "silk.net.vulkan.2.23.0.nupkg.sha512"
+    },
+    "Silk.NET.Vulkan.Extensions.KHR/2.23.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-uRaf4j+SmH3DumjSSSUbFg33BnsGZUyXGj93O9NgGKZSJN3OTmNmQDxRew+/KiVLcgH6qzbto8aNGZ++j9GFWg==",
+      "path": "silk.net.vulkan.extensions.khr/2.23.0",
+      "hashPath": "silk.net.vulkan.extensions.khr.2.23.0.nupkg.sha512"
+    },
+    "Silk.NET.Windowing.Common/2.23.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-ThStSinmY9KQI8DGiF5XEhkLJVnBcgRTBTzL9ijg1wMZAYuckz7ykrNw04fjRm2Gryh6tCNGbvz2XaY0efeFzg==",
+      "path": "silk.net.windowing.common/2.23.0",
+      "hashPath": "silk.net.windowing.common.2.23.0.nupkg.sha512"
+    },
+    "Silk.NET.Windowing.Glfw/2.23.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-aYBudKmENmvLRn9p15HbdvlQTnnXskcDfTfbYwSb/4fr263rGLwYuDw/txUEc2jihHJiWCp5+75Y7z5wTJWl7g==",
+      "path": "silk.net.windowing.glfw/2.23.0",
+      "hashPath": "silk.net.windowing.glfw.2.23.0.nupkg.sha512"
+    },
+    "StbImageSharp/2.30.15": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-7QqbupVhz2kcFUPTgMw4iHR9rYDHGundzzee19Mwmd1typ2Lnv8EVJcLJxlkeBM2+4ex0NwsMtdbGSJctp1XCQ==",
+      "path": "stbimagesharp/2.30.15",
+      "hashPath": "stbimagesharp.2.30.15.nupkg.sha512"
+    },
+    "StbTrueTypeSharp/1.26.9": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-TBz6aOsckU9klJU0omim8s5VUKusWAqTXBA2IOwN0EUYy168+HPzxgNEUw/qdJXfuXOMJbWYXlOOO5xd5BfQVg==",
+      "path": "stbtruetypesharp/1.26.9",
+      "hashPath": "stbtruetypesharp.1.26.9.nupkg.sha512"
+    },
+    "Ultz.Native.GLFW/3.4.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-Iy22JopynbOJ32vA0lBhFEzGi65GQJBuJHYBYRBpydrDpNoTiHnjIXfA65Gu+8qsOr/ZEoIF8r9aHCgAXuO6DA==",
+      "path": "ultz.native.glfw/3.4.0",
+      "hashPath": "ultz.native.glfw.3.4.0.nupkg.sha512"
+    },
+    "Veldrid/4.8.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-zBYuN8yf60zH9nIkIwmIXMgsCe8SboUzVBbYiczvmW2mmeZ9DeMJOEwu+1KORU1BCot1e7Yn8YCQpeIil3p4sQ==",
+      "path": "veldrid/4.8.0",
+      "hashPath": "veldrid.4.8.0.nupkg.sha512"
+    },
+    "Veldrid.MetalBindings/4.8.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-7pQ4lrsQB2+oOXuVp91+MHv0qAivIOInK9x/hYEoe24HygIn7Z5pX7FPxFolnE8c5TNh3lj6HBD17sJ12rVKsQ==",
+      "path": "veldrid.metalbindings/4.8.0",
+      "hashPath": "veldrid.metalbindings.4.8.0.nupkg.sha512"
+    },
+    "Veldrid.OpenGLBindings/4.8.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-N0Ux7YlzN/FhhiRqWsqNipGkg15bf+0/OKa322P6mgHf5Soh+eE2bfEAHJPNMgxpuCjSauvaX0ZToTA8AcDgqA==",
+      "path": "veldrid.openglbindings/4.8.0",
+      "hashPath": "veldrid.openglbindings.4.8.0.nupkg.sha512"
+    },
+    "Veldrid.SPIRV/1.0.15": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-hzupRH5uGibW8P/URwTFX1lDEmi1LWZKWf0euQyfS0FKVDI2gGDTB5ucq6JViG8Bk6U7Q2s1EsTXIDfXpu0oVQ==",
+      "path": "veldrid.spirv/1.0.15",
+      "hashPath": "veldrid.spirv.1.0.15.nupkg.sha512"
+    },
+    "Vk/1.0.22": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-sVfG2tYyu4k5vkAsn3FcqqW+EL3G0eyLDUsDmMUXuf2puNnhr3z1iA5H0DOzUiYfzRwAeEmPcZNp4pqv8uTvhg==",
+      "path": "vk/1.0.22",
+      "hashPath": "vk.1.0.22.nupkg.sha512"
+    },
+    "ZstdSharp.Port/0.8.8": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-UIDFkA5DC3en3tOJ3Mof11yBx9kUQLsaeo/oFdvN6Bbkr9E9+VCqfIadHci8cu+I51K2Sl7XYWVl2R/mA75NBQ==",
+      "path": "zstdsharp.port/0.8.8",
+      "hashPath": "zstdsharp.port.0.8.8.nupkg.sha512"
+    },
+    "NacreCraft/0.1.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "NacreCraft.Codec/0.1.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "NacreCraft.Commands/0.1.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "NacreCraft.Config/0.1.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "NacreCraft.DataFixer/0.1.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "NacreCraft.Game/0.1.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "NacreCraft.Nbt/0.1.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "NacreCraft.Network/0.1.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "NacreCraft.Primitives/0.1.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "NacreCraft.Registry/0.1.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "NacreCraft.Resources/0.1.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "NacreCraft.Storage/0.1.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "NacreCraft.Util/0.1.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
