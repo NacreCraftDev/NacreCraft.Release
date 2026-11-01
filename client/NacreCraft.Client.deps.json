@@ -26,7 +26,8 @@
         "runtime": {
           "lib/net8.0/DnsClient.dll": {
             "assemblyVersion": "1.8.0.0",
-            "fileVersion": "1.8.0.0"
+            "fileVersion": "1.8.0.0",
+            "localPath": "DnsClient.dll"
           }
         }
       },
@@ -34,7 +35,8 @@
         "runtime": {
           "lib/net6.0/K4os.Compression.LZ4.dll": {
             "assemblyVersion": "1.3.8.0",
-            "fileVersion": "1.3.8.0"
+            "fileVersion": "1.3.8.0",
+            "localPath": "K4os.Compression.LZ4.dll"
           }
         }
       },
@@ -46,7 +48,8 @@
         "runtime": {
           "lib/net6.0/K4os.Compression.LZ4.Streams.dll": {
             "assemblyVersion": "1.3.8.0",
-            "fileVersion": "1.3.8.0"
+            "fileVersion": "1.3.8.0",
+            "localPath": "K4os.Compression.LZ4.Streams.dll"
           }
         }
       },
@@ -54,7 +57,8 @@
         "runtime": {
           "lib/net6.0/K4os.Hash.xxHash.dll": {
             "assemblyVersion": "1.0.8.0",
-            "fileVersion": "1.0.8.0"
+            "fileVersion": "1.0.8.0",
+            "localPath": "K4os.Hash.xxHash.dll"
           }
         }
       },
@@ -63,42 +67,50 @@
           "runtimes/debian-x64/native/libuv.so": {
             "rid": "debian-x64",
             "assetType": "native",
-            "fileVersion": "0.0.0.0"
+            "fileVersion": "0.0.0.0",
+            "localPath": "runtimes/debian-x64/native/libuv.so"
           },
           "runtimes/fedora-x64/native/libuv.so": {
             "rid": "fedora-x64",
             "assetType": "native",
-            "fileVersion": "0.0.0.0"
+            "fileVersion": "0.0.0.0",
+            "localPath": "runtimes/fedora-x64/native/libuv.so"
           },
           "runtimes/opensuse-x64/native/libuv.so": {
             "rid": "opensuse-x64",
             "assetType": "native",
-            "fileVersion": "0.0.0.0"
+            "fileVersion": "0.0.0.0",
+            "localPath": "runtimes/opensuse-x64/native/libuv.so"
           },
           "runtimes/osx/native/libuv.dylib": {
             "rid": "osx",
             "assetType": "native",
-            "fileVersion": "0.0.0.0"
+            "fileVersion": "0.0.0.0",
+            "localPath": "runtimes/osx/native/libuv.dylib"
           },
           "runtimes/rhel-x64/native/libuv.so": {
             "rid": "rhel-x64",
             "assetType": "native",
-            "fileVersion": "0.0.0.0"
+            "fileVersion": "0.0.0.0",
+            "localPath": "runtimes/rhel-x64/native/libuv.so"
           },
           "runtimes/win7-arm/native/libuv.dll": {
             "rid": "win7-arm",
             "assetType": "native",
-            "fileVersion": "0.0.0.0"
+            "fileVersion": "0.0.0.0",
+            "localPath": "runtimes/win7-arm/native/libuv.dll"
           },
           "runtimes/win7-x64/native/libuv.dll": {
             "rid": "win7-x64",
             "assetType": "native",
-            "fileVersion": "0.0.0.0"
+            "fileVersion": "0.0.0.0",
+            "localPath": "runtimes/win7-x64/native/libuv.dll"
           },
           "runtimes/win7-x86/native/libuv.dll": {
             "rid": "win7-x86",
             "assetType": "native",
-            "fileVersion": "0.0.0.0"
+            "fileVersion": "0.0.0.0",
+            "localPath": "runtimes/win7-x86/native/libuv.dll"
           }
         }
       },
@@ -106,7 +118,8 @@
         "runtime": {
           "lib/netstandard1.3/Microsoft.CodeAnalysis.dll": {
             "assemblyVersion": "1.3.0.0",
-            "fileVersion": "1.3.0.60613"
+            "fileVersion": "1.3.0.60613",
+            "localPath": "Microsoft.CodeAnalysis.dll"
           }
         }
       },
@@ -117,7 +130,8 @@
         "runtime": {
           "lib/netstandard1.3/Microsoft.CodeAnalysis.CSharp.dll": {
             "assemblyVersion": "1.3.0.0",
-            "fileVersion": "1.3.0.60613"
+            "fileVersion": "1.3.0.60613",
+            "localPath": "Microsoft.CodeAnalysis.CSharp.dll"
           }
         }
       },
@@ -128,7 +142,8 @@
         "runtime": {
           "lib/netstandard1.3/Microsoft.CodeAnalysis.VisualBasic.dll": {
             "assemblyVersion": "1.3.0.0",
-            "fileVersion": "1.3.0.60613"
+            "fileVersion": "1.3.0.60613",
+            "localPath": "Microsoft.CodeAnalysis.VisualBasic.dll"
           }
         }
       },
@@ -139,7 +154,8 @@
         "runtime": {
           "lib/net8.0/Microsoft.Diagnostics.NETCore.Client.dll": {
             "assemblyVersion": "0.2.14.45401",
-            "fileVersion": "0.2.14.45401"
+            "fileVersion": "0.2.14.45401",
+            "localPath": "Microsoft.Diagnostics.NETCore.Client.dll"
           }
         }
       },
@@ -147,7 +163,8 @@
         "runtime": {
           "lib/netstandard2.0/Microsoft.DotNet.PlatformAbstractions.dll": {
             "assemblyVersion": "3.1.6.0",
-            "fileVersion": "3.100.620.31604"
+            "fileVersion": "3.100.620.31604",
+            "localPath": "Microsoft.DotNet.PlatformAbstractions.dll"
           }
         }
       },
@@ -155,7 +172,8 @@
         "runtime": {
           "lib/net8.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll": {
             "assemblyVersion": "8.0.0.0",
-            "fileVersion": "8.0.1024.46610"
+            "fileVersion": "8.0.1024.46610",
+            "localPath": "Microsoft.Extensions.DependencyInjection.Abstractions.dll"
           }
         }
       },
@@ -163,7 +181,8 @@
         "runtime": {
           "lib/net9.0/Microsoft.Extensions.DependencyModel.dll": {
             "assemblyVersion": "9.0.0.9",
-            "fileVersion": "9.0.925.41916"
+            "fileVersion": "9.0.925.41916",
+            "localPath": "Microsoft.Extensions.DependencyModel.dll"
           }
         }
       },
@@ -174,7 +193,8 @@
         "runtime": {
           "lib/net8.0/Microsoft.Extensions.Logging.Abstractions.dll": {
             "assemblyVersion": "8.0.0.0",
-            "fileVersion": "8.0.1325.6609"
+            "fileVersion": "8.0.1325.6609",
+            "localPath": "Microsoft.Extensions.Logging.Abstractions.dll"
           }
         }
       },
@@ -192,7 +212,8 @@
         "runtime": {
           "lib/netstandard2.0/NativeLibraryLoader.dll": {
             "assemblyVersion": "1.0.10.0",
-            "fileVersion": "1.0.10.0"
+            "fileVersion": "1.0.10.0",
+            "localPath": "NativeLibraryLoader.dll"
           }
         }
       },
@@ -203,7 +224,8 @@
         "runtime": {
           "lib/netcoreapp1.0/SharpDX.dll": {
             "assemblyVersion": "4.0.1.0",
-            "fileVersion": "4.0.1.0"
+            "fileVersion": "4.0.1.0",
+            "localPath": "SharpDX.dll"
           }
         }
       },
@@ -215,7 +237,8 @@
         "runtime": {
           "lib/netcoreapp1.0/SharpDX.D3DCompiler.dll": {
             "assemblyVersion": "4.0.1.0",
-            "fileVersion": "4.0.1.0"
+            "fileVersion": "4.0.1.0",
+            "localPath": "SharpDX.D3DCompiler.dll"
           }
         }
       },
@@ -228,7 +251,8 @@
         "runtime": {
           "lib/netcoreapp1.0/SharpDX.Direct3D11.dll": {
             "assemblyVersion": "4.0.1.0",
-            "fileVersion": "4.0.1.0"
+            "fileVersion": "4.0.1.0",
+            "localPath": "SharpDX.Direct3D11.dll"
           }
         }
       },
@@ -240,7 +264,8 @@
         "runtime": {
           "lib/netcoreapp1.0/SharpDX.DXGI.dll": {
             "assemblyVersion": "4.0.1.0",
-            "fileVersion": "4.0.1.0"
+            "fileVersion": "4.0.1.0",
+            "localPath": "SharpDX.DXGI.dll"
           }
         }
       },
@@ -252,7 +277,8 @@
         "runtime": {
           "lib/net6.0/Silk.NET.Core.dll": {
             "assemblyVersion": "2.23.0.0",
-            "fileVersion": "2.23.0.0"
+            "fileVersion": "2.23.0.0",
+            "localPath": "Silk.NET.Core.dll"
           }
         }
       },
@@ -264,7 +290,8 @@
         "runtime": {
           "lib/net5.0/Silk.NET.GLFW.dll": {
             "assemblyVersion": "2.23.0.0",
-            "fileVersion": "2.23.0.0"
+            "fileVersion": "2.23.0.0",
+            "localPath": "Silk.NET.GLFW.dll"
           }
         }
       },
@@ -281,7 +308,8 @@
         "runtime": {
           "lib/net5.0/Silk.NET.Input.Common.dll": {
             "assemblyVersion": "2.23.0.0",
-            "fileVersion": "2.23.0.0"
+            "fileVersion": "2.23.0.0",
+            "localPath": "Silk.NET.Input.Common.dll"
           }
         }
       },
@@ -293,7 +321,8 @@
         "runtime": {
           "lib/net5.0/Silk.NET.Input.Glfw.dll": {
             "assemblyVersion": "2.23.0.0",
-            "fileVersion": "2.23.0.0"
+            "fileVersion": "2.23.0.0",
+            "localPath": "Silk.NET.Input.Glfw.dll"
           }
         }
       },
@@ -301,7 +330,8 @@
         "runtime": {
           "lib/net5.0/Silk.NET.Maths.dll": {
             "assemblyVersion": "2.23.0.0",
-            "fileVersion": "2.23.0.0"
+            "fileVersion": "2.23.0.0",
+            "localPath": "Silk.NET.Maths.dll"
           }
         }
       },
@@ -312,7 +342,8 @@
         "runtime": {
           "lib/net5.0/Silk.NET.Vulkan.dll": {
             "assemblyVersion": "2.23.0.0",
-            "fileVersion": "2.23.0.0"
+            "fileVersion": "2.23.0.0",
+            "localPath": "Silk.NET.Vulkan.dll"
           }
         }
       },
@@ -324,7 +355,8 @@
         "runtime": {
           "lib/net5.0/Silk.NET.Vulkan.Extensions.KHR.dll": {
             "assemblyVersion": "2.23.0.0",
-            "fileVersion": "2.23.0.0"
+            "fileVersion": "2.23.0.0",
+            "localPath": "Silk.NET.Vulkan.Extensions.KHR.dll"
           }
         }
       },
@@ -336,7 +368,8 @@
         "runtime": {
           "lib/netstandard2.1/Silk.NET.Windowing.Common.dll": {
             "assemblyVersion": "2.23.0.0",
-            "fileVersion": "2.23.0.0"
+            "fileVersion": "2.23.0.0",
+            "localPath": "Silk.NET.Windowing.Common.dll"
           }
         }
       },
@@ -348,7 +381,8 @@
         "runtime": {
           "lib/net5.0/Silk.NET.Windowing.Glfw.dll": {
             "assemblyVersion": "2.23.0.0",
-            "fileVersion": "2.23.0.0"
+            "fileVersion": "2.23.0.0",
+            "localPath": "Silk.NET.Windowing.Glfw.dll"
           }
         }
       },
@@ -356,7 +390,8 @@
         "runtime": {
           "lib/netstandard2.0/StbImageSharp.dll": {
             "assemblyVersion": "2.30.15.0",
-            "fileVersion": "2.30.15.0"
+            "fileVersion": "2.30.15.0",
+            "localPath": "StbImageSharp.dll"
           }
         }
       },
@@ -364,7 +399,8 @@
         "runtime": {
           "lib/netstandard2.0/StbTrueTypeSharp.dll": {
             "assemblyVersion": "1.26.9.0",
-            "fileVersion": "1.26.9.0"
+            "fileVersion": "1.26.9.0",
+            "localPath": "StbTrueTypeSharp.dll"
           }
         }
       },
@@ -373,42 +409,50 @@
           "runtimes/linux-arm/native/libglfw.so.3": {
             "rid": "linux-arm",
             "assetType": "native",
-            "fileVersion": "0.0.0.0"
+            "fileVersion": "0.0.0.0",
+            "localPath": "runtimes/linux-arm/native/libglfw.so.3"
           },
           "runtimes/linux-arm64/native/libglfw.so.3": {
             "rid": "linux-arm64",
             "assetType": "native",
-            "fileVersion": "0.0.0.0"
+            "fileVersion": "0.0.0.0",
+            "localPath": "runtimes/linux-arm64/native/libglfw.so.3"
           },
           "runtimes/linux-x64/native/libglfw.so.3": {
             "rid": "linux-x64",
             "assetType": "native",
-            "fileVersion": "0.0.0.0"
+            "fileVersion": "0.0.0.0",
+            "localPath": "runtimes/linux-x64/native/libglfw.so.3"
           },
           "runtimes/osx-arm64/native/libglfw.3.dylib": {
             "rid": "osx-arm64",
             "assetType": "native",
-            "fileVersion": "0.0.0.0"
+            "fileVersion": "0.0.0.0",
+            "localPath": "runtimes/osx-arm64/native/libglfw.3.dylib"
           },
           "runtimes/osx-x64/native/libglfw.3.dylib": {
             "rid": "osx-x64",
             "assetType": "native",
-            "fileVersion": "0.0.0.0"
+            "fileVersion": "0.0.0.0",
+            "localPath": "runtimes/osx-x64/native/libglfw.3.dylib"
           },
           "runtimes/win-arm64/native/glfw3.dll": {
             "rid": "win-arm64",
             "assetType": "native",
-            "fileVersion": "3.4.0.0"
+            "fileVersion": "3.4.0.0",
+            "localPath": "runtimes/win-arm64/native/glfw3.dll"
           },
           "runtimes/win-x64/native/glfw3.dll": {
             "rid": "win-x64",
             "assetType": "native",
-            "fileVersion": "3.4.0.0"
+            "fileVersion": "3.4.0.0",
+            "localPath": "runtimes/win-x64/native/glfw3.dll"
           },
           "runtimes/win-x86/native/glfw3.dll": {
             "rid": "win-x86",
             "assetType": "native",
-            "fileVersion": "3.4.0.0"
+            "fileVersion": "3.4.0.0",
+            "localPath": "runtimes/win-x86/native/glfw3.dll"
           }
         }
       },
@@ -426,7 +470,8 @@
         "runtime": {
           "lib/netstandard2.0/Veldrid.dll": {
             "assemblyVersion": "4.8.0.0",
-            "fileVersion": "4.8.0.3"
+            "fileVersion": "4.8.0.3",
+            "localPath": "Veldrid.dll"
           }
         }
       },
@@ -434,7 +479,8 @@
         "runtime": {
           "lib/netstandard2.0/Veldrid.MetalBindings.dll": {
             "assemblyVersion": "4.8.0.0",
-            "fileVersion": "4.8.0.3"
+            "fileVersion": "4.8.0.3",
+            "localPath": "Veldrid.MetalBindings.dll"
           }
         }
       },
@@ -442,7 +488,8 @@
         "runtime": {
           "lib/netstandard2.0/Veldrid.OpenGLBindings.dll": {
             "assemblyVersion": "4.8.0.0",
-            "fileVersion": "4.8.0.3"
+            "fileVersion": "4.8.0.3",
+            "localPath": "Veldrid.OpenGLBindings.dll"
           }
         }
       },
@@ -453,29 +500,34 @@
         "runtime": {
           "lib/netstandard2.0/Veldrid.SPIRV.dll": {
             "assemblyVersion": "1.0.0.0",
-            "fileVersion": "1.0.15.1"
+            "fileVersion": "1.0.15.1",
+            "localPath": "Veldrid.SPIRV.dll"
           }
         },
         "runtimeTargets": {
           "runtimes/linux-x64/native/libveldrid-spirv.so": {
             "rid": "linux-x64",
             "assetType": "native",
-            "fileVersion": "0.0.0.0"
+            "fileVersion": "0.0.0.0",
+            "localPath": "runtimes/linux-x64/native/libveldrid-spirv.so"
           },
           "runtimes/osx/native/libveldrid-spirv.dylib": {
             "rid": "osx",
             "assetType": "native",
-            "fileVersion": "0.0.0.0"
+            "fileVersion": "0.0.0.0",
+            "localPath": "runtimes/osx/native/libveldrid-spirv.dylib"
           },
           "runtimes/win-x64/native/libveldrid-spirv.dll": {
             "rid": "win-x64",
             "assetType": "native",
-            "fileVersion": "0.0.0.0"
+            "fileVersion": "0.0.0.0",
+            "localPath": "runtimes/win-x64/native/libveldrid-spirv.dll"
           },
           "runtimes/win-x86/native/libveldrid-spirv.dll": {
             "rid": "win-x86",
             "assetType": "native",
-            "fileVersion": "0.0.0.0"
+            "fileVersion": "0.0.0.0",
+            "localPath": "runtimes/win-x86/native/libveldrid-spirv.dll"
           }
         }
       },
@@ -483,7 +535,8 @@
         "runtime": {
           "lib/netstandard1.4/vk.dll": {
             "assemblyVersion": "1.0.22.0",
-            "fileVersion": "1.0.22.0"
+            "fileVersion": "1.0.22.0",
+            "localPath": "vk.dll"
           }
         }
       },
@@ -491,7 +544,8 @@
         "runtime": {
           "lib/net9.0/ZstdSharp.dll": {
             "assemblyVersion": "0.8.8.0",
-            "fileVersion": "0.8.8.0"
+            "fileVersion": "0.8.8.0",
+            "localPath": "ZstdSharp.dll"
           }
         }
       },
