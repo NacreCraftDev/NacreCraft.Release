@@ -12,7 +12,9 @@
           "NacreCraft.Game": "0.1.0",
           "Silk.NET.Input": "2.23.0",
           "Silk.NET.Vulkan": "2.23.0",
+          "Silk.NET.Vulkan.Extensions.AMD": "2.23.0",
           "Silk.NET.Vulkan.Extensions.KHR": "2.23.0",
+          "Silk.NET.Vulkan.Extensions.NV": "2.23.0",
           "Silk.NET.Windowing.Glfw": "2.23.0",
           "StbImageSharp": "2.30.15",
           "StbTrueTypeSharp": "1.26.9",
@@ -347,6 +349,19 @@
           }
         }
       },
+      "Silk.NET.Vulkan.Extensions.AMD/2.23.0": {
+        "dependencies": {
+          "Silk.NET.Core": "2.23.0",
+          "Silk.NET.Vulkan": "2.23.0"
+        },
+        "runtime": {
+          "lib/net5.0/Silk.NET.Vulkan.Extensions.AMD.dll": {
+            "assemblyVersion": "2.23.0.0",
+            "fileVersion": "2.23.0.0",
+            "localPath": "Silk.NET.Vulkan.Extensions.AMD.dll"
+          }
+        }
+      },
       "Silk.NET.Vulkan.Extensions.KHR/2.23.0": {
         "dependencies": {
           "Silk.NET.Core": "2.23.0",
@@ -357,6 +372,19 @@
             "assemblyVersion": "2.23.0.0",
             "fileVersion": "2.23.0.0",
             "localPath": "Silk.NET.Vulkan.Extensions.KHR.dll"
+          }
+        }
+      },
+      "Silk.NET.Vulkan.Extensions.NV/2.23.0": {
+        "dependencies": {
+          "Silk.NET.Core": "2.23.0",
+          "Silk.NET.Vulkan": "2.23.0"
+        },
+        "runtime": {
+          "lib/net5.0/Silk.NET.Vulkan.Extensions.NV.dll": {
+            "assemblyVersion": "2.23.0.0",
+            "fileVersion": "2.23.0.0",
+            "localPath": "Silk.NET.Vulkan.Extensions.NV.dll"
           }
         }
       },
@@ -909,12 +937,26 @@
       "path": "silk.net.vulkan/2.23.0",
       "hashPath": "silk.net.vulkan.2.23.0.nupkg.sha512"
     },
+    "Silk.NET.Vulkan.Extensions.AMD/2.23.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-WzISYcI56xcmFA53g8RwRFCulBlR3DsUVVCxIh7Y4SCMyPcYR1/UTsWK5je5Hr6zA11PD2TxcqRtuwtM8ub7tQ==",
+      "path": "silk.net.vulkan.extensions.amd/2.23.0",
+      "hashPath": "silk.net.vulkan.extensions.amd.2.23.0.nupkg.sha512"
+    },
     "Silk.NET.Vulkan.Extensions.KHR/2.23.0": {
       "type": "package",
       "serviceable": true,
       "sha512": "sha512-uRaf4j+SmH3DumjSSSUbFg33BnsGZUyXGj93O9NgGKZSJN3OTmNmQDxRew+/KiVLcgH6qzbto8aNGZ++j9GFWg==",
       "path": "silk.net.vulkan.extensions.khr/2.23.0",
       "hashPath": "silk.net.vulkan.extensions.khr.2.23.0.nupkg.sha512"
+    },
+    "Silk.NET.Vulkan.Extensions.NV/2.23.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-4kdDGYLj9b8gFUmPeZ3xolWjTSl8as2jKNWvX4ifDO48u6OKGbEY2NY7OBs9+q3WLFzsdk3pyX2xyBkZnLuHvw==",
+      "path": "silk.net.vulkan.extensions.nv/2.23.0",
+      "hashPath": "silk.net.vulkan.extensions.nv.2.23.0.nupkg.sha512"
     },
     "Silk.NET.Windowing.Common/2.23.0": {
       "type": "package",

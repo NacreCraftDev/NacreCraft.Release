@@ -5,3 +5,5 @@ obj/
 .pslocal/
 .psctx.json
 *.pdb
+lzma-packer.exe
+Setup/
