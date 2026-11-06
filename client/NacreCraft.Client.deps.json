@@ -579,6 +579,7 @@
       },
       "NacreCraft/0.1.0": {
         "dependencies": {
+          "NacreCraft.Boot": "0.1.0",
           "NacreCraft.Commands": "0.1.0",
           "NacreCraft.Network": "0.1.0",
           "NacreCraft.Registry": "0.1.0",
@@ -587,6 +588,17 @@
         },
         "runtime": {
           "NacreCraft.dll": {
+            "assemblyVersion": "0.1.0.0",
+            "fileVersion": "0.1.0.0"
+          }
+        }
+      },
+      "NacreCraft.Boot/0.1.0": {
+        "dependencies": {
+          "NacreCraft.Logging": "0.1.0"
+        },
+        "runtime": {
+          "NacreCraft.Boot.dll": {
             "assemblyVersion": "0.1.0.0",
             "fileVersion": "0.1.0.0"
           }
@@ -645,6 +657,17 @@
         },
         "runtime": {
           "NacreCraft.Game.dll": {
+            "assemblyVersion": "0.1.0.0",
+            "fileVersion": "0.1.0.0"
+          }
+        }
+      },
+      "NacreCraft.Logging/0.1.0": {
+        "dependencies": {
+          "ZstdSharp.Port": "0.8.8"
+        },
+        "runtime": {
+          "NacreCraft.Logging.dll": {
             "assemblyVersion": "0.1.0.0",
             "fileVersion": "0.1.0.0"
           }
@@ -735,10 +758,10 @@
       "NacreCraft.Util/0.1.0": {
         "dependencies": {
           "Microsoft.Diagnostics.NETCore.Client": "0.2.745401",
+          "NacreCraft.Boot": "0.1.0",
           "NacreCraft.Codec": "0.1.0",
           "NacreCraft.Config": "0.1.0",
-          "NacreCraft.Primitives": "0.1.0",
-          "ZstdSharp.Port": "0.8.8"
+          "NacreCraft.Primitives": "0.1.0"
         },
         "runtime": {
           "NacreCraft.Util.dll": {
@@ -1040,6 +1063,11 @@
       "serviceable": false,
       "sha512": ""
     },
+    "NacreCraft.Boot/0.1.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
     "NacreCraft.Codec/0.1.0": {
       "type": "project",
       "serviceable": false,
@@ -1061,6 +1089,11 @@
       "sha512": ""
     },
     "NacreCraft.Game/0.1.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "NacreCraft.Logging/0.1.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
