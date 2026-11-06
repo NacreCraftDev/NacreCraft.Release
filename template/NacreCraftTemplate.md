@@ -1,14 +1,14 @@
 # NacreCraft mod template
 
 Sample code for NacreCraft mod development. Every entry in `NacreCraftTemplate.yaml`
-points at one file under `examples/`, and `ncm template` pulls them on demand.
+points at one file under `examples/`, and `pit template` pulls them on demand.
 
 ## Usage
 
 ```
-ncm template view              list every entry
-ncm template view Wrapper.?    filter by id, ? and * are wildcards
-ncm template example <api id>  pull one example file into the current directory
+pit template view              list every entry
+pit template view Wrapper.?    filter by id, ? and * are wildcards
+pit template example <api id>  pull one example file into the current directory
 ```
 
 ## Namespaces
@@ -20,6 +20,7 @@ ncm template example <api id>  pull one example file into the current directory
 | `NacreCraft.ModApi.Wrapper` | Events, `Nc*` facades and `Nc*` handles. Kernel types stay off the public surface, so a kernel rename does not force a rebuild of your mod. |
 | `NacreCraft.ModApi.Content` | `NcContent` and `NcBlockSettings` for custom blocks and items. `BlockBehaviour` and `Item` are meant to be subclassed, exactly like Fabric's `Block` and `Item`; a kernel rename breaks that part. |
 | `NacreCraft.ModApi.Capability` | `NcBlockApiLookup` / `NcItemApiLookup` / `NcEntityApiLookup` for mod-to-mod services. |
+| `NacreCraft.ModApi.Network` | `NcNetworking` / `NcChannel` for custom payload channels. |
 | `NacreCraft.ModApi.Pack` | `NcModPacks` for data and resource packs contributed by a mod. |
 | `NacreCraft.ModApi.Extension` | `[Inject]` and `[Mixin]` attributes. Rules name kernel types and methods directly, which is more powerful and more fragile. |
 
@@ -81,6 +82,30 @@ Registration is an init-time action; a duplicate registration throws. A provider
 returning `null` means "this one does not expose the service", not an error.
 Lookups do not touch kernel code, so they work in `Init` and in callbacks alike.
 
+## Network channels
+
+`NcNetworking.Register` creates a channel keyed by a `namespace:path` id. Register it in
+`Init` on both sides; the same id must be registered on each side. Payloads are raw
+bytes, the mod owns their format.
+
+```csharp
+var channel = NcNetworking.Register("mymod:main");
+
+channel.Received.Subscribe(args =>
+    Log.Info($"{args.Payload.Length} bytes serverbound={args.IsServerbound}"));
+
+// Server side
+channel.SendToPlayer(player, payload);
+channel.SendToAll(payload);
+
+// Client side
+channel.SendToServer(payload);
+```
+
+A duplicate channel id throws. A payload larger than the kernel limit is rejected
+before it reaches the connection. A packet on a channel the receiving side never
+registered is logged and dropped.
+
 ## Mod packs
 
 `NcModPacks.Register` contributes a data pack from the resources embedded in the
@@ -117,6 +142,8 @@ at all. Hover a highlighted name to see the reason.
 | `NcContent.Register` | register custom content before the registries freeze |
 | `NcBlockSettings.Create` | build a block from settings |
 | `NcBlockApiLookup.Get` | publish or query a block capability |
+| `NcNetworking.Register` | create a custom payload channel |
+| `NcChannel.SendToServer` | send a payload from the client |
 | `NcModPacks.Register` | contribute an embedded data pack |
 | `ServerEvents.Tick` | runs every server tick |
 | `ServerEvents.PlayerJoin` | a player finished joining |

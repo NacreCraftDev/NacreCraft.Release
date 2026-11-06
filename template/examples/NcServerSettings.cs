@@ -4,7 +4,7 @@
 // touch memory; call Save to flush them back to the file. Keys the kernel
 // does not open to mods are not reachable here.
 //
-// The namespace and class below are filled in by `ncm template example`,
+// The namespace and class below are filled in by `pit template example`,
 // using the project you run it in.
 using NacreCraft.Logging;
 using NacreCraft.ModApi.Wrapper;

@@ -3,7 +3,7 @@
 // Reach it through NcServer.TickRate. Freezing still ticks the levels, it
 // only filters entities and random ticks, so LevelTick keeps firing.
 //
-// The namespace and class below are filled in by `ncm template example`,
+// The namespace and class below are filled in by `pit template example`,
 // using the project you run it in.
 using NacreCraft.Logging;
 using NacreCraft.ModApi.Wrapper;

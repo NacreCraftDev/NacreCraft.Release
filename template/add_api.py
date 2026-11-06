@@ -23,12 +23,12 @@ ROOT = pathlib.Path(__file__).resolve().parent
 CATALOG = ROOT / "NacreCraftTemplate.yaml"
 
 # Skeleton for a brand new example. Braces are doubled for str.format.
-# The two placeholders are filled in by `ncm template example`, not here.
+# The two placeholders are filled in by `pit template example`, not here.
 SKELETON = """// {title}
 //
 // {summary}
 //
-// The namespace and class below are filled in by `ncm template example`,
+// The namespace and class below are filled in by `pit template example`,
 // using the project you run it in.
 {usings}
 namespace __MOD_NAMESPACE__;

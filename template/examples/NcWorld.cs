@@ -5,7 +5,7 @@
 //
 // Coordinates are always plain x y z ints, no BlockPos on the public surface.
 //
-// The namespace and class below are filled in by `ncm template example`,
+// The namespace and class below are filled in by `pit template example`,
 // using the project you run it in.
 using NacreCraft.Logging;
 using NacreCraft.ModApi.Wrapper;

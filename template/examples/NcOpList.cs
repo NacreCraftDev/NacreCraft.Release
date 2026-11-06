@@ -3,7 +3,7 @@
 // Reach it through NcLists.Ops. The level is 0 to 4 and is clamped before it
 // reaches the file.
 //
-// The namespace and class below are filled in by `ncm template example`,
+// The namespace and class below are filled in by `pit template example`,
 // using the project you run it in.
 using NacreCraft.Logging;
 using NacreCraft.ModApi.Wrapper;

@@ -3,7 +3,7 @@
 // Obtained from NcAccess.Property. A get-only or set-only property reports
 // the missing side through CanRead / CanWrite, and using that side throws.
 //
-// The namespace and class below are filled in by `ncm template example`,
+// The namespace and class below are filled in by `pit template example`,
 // using the project you run it in.
 using NacreCraft.Logging;
 using NacreCraft.ModApi.Wrapper;

@@ -4,7 +4,7 @@
 // beats the parse. The same data is also published once through
 // NcStartup.Ready, so pick whichever fits your entry point.
 //
-// The namespace and class below are filled in by `ncm template example`,
+// The namespace and class below are filled in by `pit template example`,
 // using the project you run it in.
 using NacreCraft.Logging;
 using NacreCraft.ModApi.Wrapper;

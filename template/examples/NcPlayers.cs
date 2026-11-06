@@ -4,7 +4,7 @@
 // events; a mod cannot build one itself, so nothing here can reach a player
 // that is not on the server.
 //
-// The namespace and class below are filled in by `ncm template example`,
+// The namespace and class below are filled in by `pit template example`,
 // using the project you run it in.
 using NacreCraft.Logging;
 using NacreCraft.ModApi.Wrapper;

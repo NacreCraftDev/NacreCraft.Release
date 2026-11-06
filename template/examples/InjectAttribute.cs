@@ -12,7 +12,7 @@
 //   2. The kernel no longer runs its own code at that call site, so put the
 //      original logic back yourself.
 //
-// The namespace and class below are filled in by `ncm template example`,
+// The namespace and class below are filled in by `pit template example`,
 // using the project you run it in.
 using NacreCraft.Game.Server;
 using NacreCraft.ModApi.Extension;

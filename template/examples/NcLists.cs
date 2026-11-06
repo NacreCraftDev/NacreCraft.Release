@@ -3,7 +3,7 @@
 // These are the kernel's live list objects, not copies. The settings view is
 // NcLists.Settings; its setters only touch memory until Save runs.
 //
-// The namespace and class below are filled in by `ncm template example`,
+// The namespace and class below are filled in by `pit template example`,
 // using the project you run it in.
 using NacreCraft.Logging;
 using NacreCraft.ModApi.Wrapper;

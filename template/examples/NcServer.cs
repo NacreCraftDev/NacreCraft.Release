@@ -4,7 +4,7 @@
 // throws until the main loop is up. Only call it from an event callback,
 // and guard with IsAvailable when the call site is somewhere else.
 //
-// The namespace and class below are filled in by `ncm template example`,
+// The namespace and class below are filled in by `pit template example`,
 // using the project you run it in.
 using NacreCraft.Logging;
 using NacreCraft.ModApi.Wrapper;

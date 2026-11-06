@@ -3,7 +3,7 @@
 // The counterpart of ServerEvents. Both sides load the same ModApi, so a mod
 // packaged for both can subscribe on each without a branch.
 //
-// The namespace and class below are filled in by `ncm template example`,
+// The namespace and class below are filled in by `pit template example`,
 // using the project you run it in.
 using NacreCraft.Logging;
 using NacreCraft.ModApi.Wrapper;

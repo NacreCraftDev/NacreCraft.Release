@@ -9,7 +9,7 @@
 // The source class is left an empty shell once the members have moved, and
 // nothing else in your mod may use it afterwards.
 //
-// The namespace and class below are filled in by `ncm template example`,
+// The namespace and class below are filled in by `pit template example`,
 // using the project you run it in.
 using NacreCraft.Game.Server;
 using NacreCraft.ModApi.Extension;

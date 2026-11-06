@@ -4,7 +4,7 @@
 // repeated reads and writes skip the reflection bind. A readonly field
 // reports CanWrite as false, and Set on one throws.
 //
-// The namespace and class below are filled in by `ncm template example`,
+// The namespace and class below are filled in by `pit template example`,
 // using the project you run it in.
 using NacreCraft.Logging;
 using NacreCraft.ModApi.Wrapper;

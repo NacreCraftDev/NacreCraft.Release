@@ -3,7 +3,7 @@
 // Reach it through NcServer.GameRules. Both the short name and the
 // minecraft: prefixed one resolve; NcGameRules.All lists every rule.
 //
-// The namespace and class below are filled in by `ncm template example`,
+// The namespace and class below are filled in by `pit template example`,
 // using the project you run it in.
 using NacreCraft.Logging;
 using NacreCraft.ModApi.Wrapper;

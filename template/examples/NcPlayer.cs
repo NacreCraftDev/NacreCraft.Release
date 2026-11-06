@@ -5,7 +5,7 @@
 // always maps to the same handle. Coordinates are plain numbers on purpose,
 // so no kernel value type leaks into the public surface.
 //
-// The namespace and class below are filled in by `ncm template example`,
+// The namespace and class below are filled in by `pit template example`,
 // using the project you run it in.
 using NacreCraft.Logging;
 using NacreCraft.ModApi.Wrapper;

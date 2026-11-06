@@ -5,7 +5,7 @@
 // and height range. Block read and write stay on NcWorld and take the handle
 // plus x y z, so no kernel type appears in this surface.
 //
-// The namespace and class below are filled in by `ncm template example`,
+// The namespace and class below are filled in by `pit template example`,
 // using the project you run it in.
 using NacreCraft.Logging;
 using NacreCraft.ModApi.Wrapper;

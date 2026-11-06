@@ -4,7 +4,7 @@
 // implementation details, and a kernel rename breaks a mod that relies on
 // them. Prefer an Nc* facade or an event whenever one covers what you need.
 //
-// The namespace and class below are filled in by `ncm template example`,
+// The namespace and class below are filled in by `pit template example`,
 // using the project you run it in.
 using NacreCraft.Logging;
 using NacreCraft.ModApi.Wrapper;

@@ -4,7 +4,7 @@
 // before that finishes. Do not cache what you read during Init, read it again
 // from a server event once the world is up.
 //
-// The namespace and class below are filled in by `ncm template example`,
+// The namespace and class below are filled in by `pit template example`,
 // using the project you run it in.
 using NacreCraft.Logging;
 using NacreCraft.ModApi.Wrapper;

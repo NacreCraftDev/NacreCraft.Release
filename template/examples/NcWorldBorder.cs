@@ -3,7 +3,7 @@
 // Reach it through NcWorld.Border for the overworld. Size, center and the
 // damage knobs persist with the world and sync to the clients.
 //
-// The namespace and class below are filled in by `ncm template example`,
+// The namespace and class below are filled in by `pit template example`,
 // using the project you run it in.
 using NacreCraft.Logging;
 using NacreCraft.ModApi.Wrapper;

@@ -4,7 +4,7 @@
 // is a wrapper type, so a kernel rename does not reach your code. Subscribe
 // from your entry point, the event table is ready before the first tick.
 //
-// The namespace and class below are filled in by `ncm template example`,
+// The namespace and class below are filled in by `pit template example`,
 // using the project you run it in.
 using NacreCraft.Logging;
 using NacreCraft.ModApi.Wrapper;

@@ -4,7 +4,7 @@
 // get the raw packet object and nothing decoded. Use IsServerbound to tell the
 // two directions apart.
 //
-// The namespace and class below are filled in by `ncm template example`,
+// The namespace and class below are filled in by `pit template example`,
 // using the project you run it in.
 using NacreCraft.Logging;
 using NacreCraft.ModApi.Wrapper;

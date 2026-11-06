@@ -1,13 +1,13 @@
 # NacreCraft mod template catalog.
-# Read by `ncm template`. Field names stay in sync with TemplateCatalog.cs.
+# Read by `pit template`. Field names stay in sync with TemplateCatalog.cs.
 
 # Fetch base for every template path below.
 base: https://raw.githubusercontent.com/NacreCraftDev/NacreCraftTemplate/refs/heads/main
 
-# Document rendered by `ncm template ui`.
+# Document rendered by `pit template ui`.
 document: NacreCraftTemplate.md
 
-# How `ncm template ui` spots api usage while it reads the open project.
+# How `pit template ui` spots api usage while it reads the open project.
 # It goes through every *.cs file for `Type.Member`, where Type starts with one
 # of the prefixes below or is spelled out in types, then grades the symbol
 # against the apis list further down:
@@ -201,6 +201,21 @@ apis:
     summary: Build a block from data instead of overriding behavior.
     template: examples/NcBlockSettings.cs
     members: [Create, Property, DefaultState, Strength, LightLevel, RandomTicks, NoOcclusion, NoCollision]
+  - id: NacreCraft.ModApi.Network.NcNetworking
+    title: Network channels
+    summary: Register a custom payload channel and find it again.
+    template: examples/NcNetworking.cs
+    members: [Register, Find, RegisteredChannels]
+  - id: NacreCraft.ModApi.Network.NcChannel
+    title: Network channel
+    summary: Send payloads and handle received ones on one channel.
+    template: examples/NcChannel.cs
+    members: [Id, Received, SendToPlayer, SendToAll, SendToServer]
+  - id: NacreCraft.ModApi.Network.NcChannelMessageArgs
+    title: Channel message
+    summary: One payload received on a channel.
+    template: examples/NcChannelMessageArgs.cs
+    members: [Player, Payload, IsServerbound]
   - id: NacreCraft.ModApi.Pack.NcModPacks
     title: Mod packs
     summary: Contribute a data or resource pack from a mod; it is staged before the pack repository scans.
