@@ -845,6 +845,7 @@
       },
       "NacreCraft.Resources/0.1.0": {
         "dependencies": {
+          "NacreCraft.Network": "0.1.0",
           "NacreCraft.Registry": "0.1.0",
           "NacreCraft.Util": "0.1.0"
         },
