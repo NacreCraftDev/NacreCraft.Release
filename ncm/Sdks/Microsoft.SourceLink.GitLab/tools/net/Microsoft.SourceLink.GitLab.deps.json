@@ -1,0 +1,80 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v10.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v10.0": {
+      "Microsoft.SourceLink.GitLab/11.0.100-rc.3.26522.148": {
+        "runtime": {
+          "Microsoft.SourceLink.GitLab.dll": {}
+        },
+        "resources": {
+          "cs/Microsoft.SourceLink.GitLab.resources.dll": {
+            "locale": "cs"
+          },
+          "de/Microsoft.SourceLink.GitLab.resources.dll": {
+            "locale": "de"
+          },
+          "es/Microsoft.SourceLink.GitLab.resources.dll": {
+            "locale": "es"
+          },
+          "fr/Microsoft.SourceLink.GitLab.resources.dll": {
+            "locale": "fr"
+          },
+          "it/Microsoft.SourceLink.GitLab.resources.dll": {
+            "locale": "it"
+          },
+          "ja/Microsoft.SourceLink.GitLab.resources.dll": {
+            "locale": "ja"
+          },
+          "ko/Microsoft.SourceLink.GitLab.resources.dll": {
+            "locale": "ko"
+          },
+          "pl/Microsoft.SourceLink.GitLab.resources.dll": {
+            "locale": "pl"
+          },
+          "pt-BR/Microsoft.SourceLink.GitLab.resources.dll": {
+            "locale": "pt-BR"
+          },
+          "ru/Microsoft.SourceLink.GitLab.resources.dll": {
+            "locale": "ru"
+          },
+          "tr/Microsoft.SourceLink.GitLab.resources.dll": {
+            "locale": "tr"
+          },
+          "zh-Hans/Microsoft.SourceLink.GitLab.resources.dll": {
+            "locale": "zh-Hans"
+          },
+          "zh-Hant/Microsoft.SourceLink.GitLab.resources.dll": {
+            "locale": "zh-Hant"
+          }
+        }
+      },
+      "System.IO.Hashing/11.0.0-rc.3.26522.148": {
+        "runtime": {
+          "lib/net10.0/System.IO.Hashing.dll": {
+            "assemblyVersion": "11.0.0.0",
+            "fileVersion": "11.0.26.52348",
+            "localPath": "System.IO.Hashing.dll"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Microsoft.SourceLink.GitLab/11.0.100-rc.3.26522.148": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "System.IO.Hashing/11.0.0-rc.3.26522.148": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-JIKBvTqt5HSZWU86qQFYO/ia1JY76VgjiJufdATN+lK0v5fIY9GAEo0DzC5nm2Kynj+aSEoQwKojm6sYpmbdQw==",
+      "path": "system.io.hashing/11.0.0-rc.3.26522.148",
+      "hashPath": "system.io.hashing.11.0.0-rc.3.26522.148.nupkg.sha512"
+    }
+  }
+}

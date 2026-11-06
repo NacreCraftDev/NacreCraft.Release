@@ -1,0 +1,182 @@
+# NacreCraft mod template catalog.
+# Read by `ncm template`. Field names stay in sync with TemplateCatalog.cs.
+
+# Fetch base for every template path below.
+base: https://raw.githubusercontent.com/NacreCraftDev/NacreCraftTemplate/refs/heads/main
+
+# Document rendered by `ncm template ui`.
+document: NacreCraftTemplate.md
+
+# How `ncm template ui` spots api usage while it reads the open project.
+# It goes through every *.cs file for `Type.Member`, where Type starts with one
+# of the prefixes below or is spelled out in types, then grades the symbol
+# against the apis list further down:
+#   declared type + declared member -> correct    (green)
+#   declared type + other member    -> suspicious (amber)
+#   type not declared at all        -> unknown    (red)
+# An entry without a members list accepts any member.
+grade:
+  prefixes: [Nc]
+  types: [ServerEvents, ClientEvents, NetworkEvents]
+
+# The apis list is the authoritative api surface. Keep it complete: an api that
+# works but is not declared here still shows up as unknown.
+apis:
+  - id: NacreCraft.ModApi.Wrapper.NcServer
+    title: Server facade
+    summary: Online list, broadcast, command execution and save.
+    template: examples/NcServer.cs
+    members: [Current, IsAvailable, Require, Settings, TickRate, GameRules, Overworld, Nether, End, Running, TickCount, AverageTickTimeNanos, Tps, WorldSeed, SpawnPos, SetSpawnPos, DefaultGameType, SetDefaultGameType, WhiteListEnabled, SavingEnabled, SetWeather, SaveAll, Broadcast, Execute]
+  - id: NacreCraft.ModApi.Wrapper.NcPlayer
+    title: Player handle
+    summary: Read only view over a kernel ServerPlayer.
+    template: examples/NcPlayer.cs
+    members: [Name, Uuid, EntityId, X, Y, Z, Yaw, Pitch, Health, MaxHealth, GameType, PermissionLevel, HasPermission, IsAlive, IsSneaking, IsSprinting]
+  - id: NacreCraft.ModApi.Wrapper.NcPlayers
+    title: Player actions
+    summary: Look up online players and act on them.
+    template: examples/NcPlayers.cs
+    members: [All, Count, Max, Find, Send, SendOverlay, Kick, SetGameMode, SetPermissionLevel, Teleport, TeleportTo, SetHealth, Heal, Hurt]
+  - id: NacreCraft.ModApi.Wrapper.NcWorld
+    title: World access
+    summary: Block read and write on any dimension, plus the level handles for time, weather and border.
+    template: examples/NcWorld.cs
+    members: [Overworld, Nether, End, Get, DayTime, GameTime, RainLevel, ThunderLevel, IsRaining, IsThundering, Border, GetBlock, SetBlock, BreakBlock, LevelEvent, FindBlock, FindState]
+  - id: NacreCraft.ModApi.Wrapper.NcLevel
+    title: Level handle
+    summary: Read only view over one dimension, holding its time, weather and height range.
+    template: examples/NcLevel.cs
+    members: [Dimension, DayTime, GameTime, RainLevel, ThunderLevel, IsRaining, IsThundering, MinBuildHeight, MaxBuildHeight, Ticks, ForceLoadChunk, UnloadForceLoadedChunk]
+  - id: NacreCraft.ModApi.Wrapper.NcRegistries
+    title: Registry lookup
+    summary: Find blocks, items, biomes, particles and entity types by id.
+    template: examples/NcRegistries.cs
+    members: [Blocks, Items, Fluids, MobEffects, Biomes, Particles, EntityTypes, BlockEntityTypes, FindBlock, FindState, FindItem, FindFluid, FindMobEffect, FindBiome, FindParticle, FindEntityType, FindBlockEntityType]
+  - id: NacreCraft.ModApi.Wrapper.NcRecipes
+    title: Recipe lookup
+    summary: Crafting, stonecutting and cooking recipes.
+    template: examples/NcRecipes.cs
+    members: [Manager, IsAvailable, Require, Count, StonecutterCount, CookingCount, Craft, Find, StonecuttingFor, CookingFor]
+  - id: NacreCraft.ModApi.Wrapper.NcLists
+    title: Lists and settings
+    summary: Whitelist, operators, bans and server.properties.
+    template: examples/NcLists.cs
+    members: [WhiteList, Ops, Bans, IpBans, Settings, IsOp, IsBanned, IsWhitelisted]
+  - id: NacreCraft.ModApi.Wrapper.NcStartup
+    title: Startup arguments
+    summary: Tokens the kernel did not recognize, plus per name subscriptions.
+    template: examples/NcStartup.cs
+    members: [Ready, Arguments, IsReady, Has, Value, Values, Subscribe]
+  - id: NacreCraft.ModApi.Wrapper.ServerEvents
+    title: Server events
+    summary: Subscribe to lifecycle, player, chunk and block events.
+    template: examples/ServerEvents.cs
+    members: [Tick, Started, Stopping, CommandRegister, CommandExecuted, PlayerJoin, PlayerLeave, PlayerDisconnect, PlayerHurt, PlayerDeath, PlayerChat, ChunkLoaded, ChunkUnloaded, ChunkSaved, LevelTick, SavedDataSaving, BlockChanged, BlockBroken, ItemDropped]
+  - id: NacreCraft.ModApi.Wrapper.ClientEvents
+    title: Client events
+    summary: Client side tick.
+    template: examples/ClientEvents.cs
+    members: [Tick]
+  - id: NacreCraft.ModApi.Wrapper.NetworkEvents
+    title: Network events
+    summary: Inbound packets on both sides.
+    template: examples/NetworkEvents.cs
+    members: [PacketReceived]
+  - id: NacreCraft.ModApi.Extension.InjectAttribute
+    title: Injection attribute
+    summary: Hook your own method onto a kernel call site.
+    template: examples/InjectAttribute.cs
+  - id: NacreCraft.ModApi.Extension.MixinAttribute
+    title: Mixin attribute
+    summary: Move members of your class into a kernel type.
+    template: examples/MixinAttribute.cs
+  - id: NacreCraft.ModApi.Wrapper.NcServerSettings
+    title: Settings handle
+    summary: server.properties at runtime, writes go to the file on Save.
+    template: examples/NcServerSettings.cs
+    members: [Port, MaxPlayers, LevelName, Gamemode, Difficulty, OnlineMode, AllowPvp, AllowFlight, ViewDistance, SimulationDistance, Motd, WhiteListConfig, PlayerIdleTimeout, NcLanguage, SetGamemode, SetDifficulty, SetPlayerIdleTimeout, SetWhiteList, Save]
+  - id: NacreCraft.ModApi.Wrapper.NcGameRules
+    title: Game rules handle
+    summary: Read and write game rules by name.
+    template: examples/NcGameRules.cs
+    members: [All, CanonicalName, GetBool, SetBool, GetInt, SetInt]
+  - id: NacreCraft.ModApi.Wrapper.NcTickRate
+    title: Tick rate handle
+    summary: Freeze, step and sprint the world clock.
+    template: examples/NcTickRate.cs
+    members: [Rate, SetRate, IsFrozen, SetFrozen, IsSprinting, Sprint, StopSprint, Step, StopStep]
+  - id: NacreCraft.ModApi.Wrapper.NcWorldBorder
+    title: World border handle
+    summary: Size, center and damage knobs of one world border.
+    template: examples/NcWorldBorder.cs
+    members: [Size, SetSize, CenterX, CenterZ, SetCenter, MinX, MaxX, MinZ, MaxZ, DamagePerBlock, SafeZone, WarningTime, WarningBlocks, AbsoluteMaxSize, Contains, DistanceTo]
+  - id: NacreCraft.ModApi.Wrapper.NcWhiteList
+    title: White list handle
+    summary: Read and edit whitelist.json.
+    template: examples/NcWhiteList.cs
+    members: [Count, Names, Contains, Add, Remove]
+  - id: NacreCraft.ModApi.Wrapper.NcOpList
+    title: Operator list handle
+    summary: Read and edit ops.json.
+    template: examples/NcOpList.cs
+    members: [Count, Names, Contains, PermissionLevel, Add, Remove]
+  - id: NacreCraft.ModApi.Wrapper.NcBanList
+    title: Player ban handle
+    summary: Read and edit banned-players.json.
+    template: examples/NcBanList.cs
+    members: [IsBanned, Ban, Unban]
+  - id: NacreCraft.ModApi.Wrapper.NcIpBanList
+    title: Ip ban handle
+    summary: Read and edit banned-ips.json.
+    template: examples/NcIpBanList.cs
+    members: [IsBanned, Ban, Unban]
+  - id: NacreCraft.ModApi.Wrapper.NcAccess
+    title: Escape hatch
+    summary: Reach kernel members the facades do not cover.
+    template: examples/NcAccess.cs
+    members: [Unwrap, FindType, Field, Property, Method]
+  - id: NacreCraft.ModApi.Wrapper.NcField
+    title: Field handle
+    summary: Read and write one kernel field.
+    template: examples/NcField.cs
+    members: [Name, FieldType, CanWrite, Get, Set]
+  - id: NacreCraft.ModApi.Wrapper.NcProperty
+    title: Property handle
+    summary: Read and write one kernel property.
+    template: examples/NcProperty.cs
+    members: [Name, PropertyType, CanRead, CanWrite, Get, Set]
+  - id: NacreCraft.ModApi.Wrapper.NcMethod
+    title: Method handle
+    summary: Invoke one kernel method.
+    template: examples/NcMethod.cs
+    members: [Name, ReturnType, ParameterCount, Invoke]
+  - id: NacreCraft.ModApi.Wrapper.NcEvent
+    title: Event handle
+    summary: Hold one subscription, dispose it to unsubscribe.
+    template: examples/NcEvent.cs
+    members: [Subscribe]
+  - id: NacreCraft.ModApi.Pack.NcModPacks
+    title: Mod packs
+    summary: Contribute a data or resource pack from a mod; it is staged before the pack repository scans.
+    template: examples/NcModPacks.cs
+    members: [Registered, Register, RegisterFolder, RegisterZip]
+  - id: NacreCraft.ModApi.Pack.NcModPack
+    title: Mod pack entry
+    summary: One registered pack and the settings it was registered with.
+    template: examples/NcModPack.cs
+    members: [Id, Kind, Path, Assembly, Side, Priority, EnabledByDefault]
+  - id: NacreCraft.ModApi.Pack.NcPackSide
+    title: Pack side
+    summary: Which resource roots a pack is staged into.
+    template: examples/NcPackSide.cs
+    members: [Both, ServerData, ClientResources]
+  - id: NacreCraft.ModApi.Pack.NcPackKind
+    title: Pack source kind
+    summary: Where a pack's bytes come from.
+    template: examples/NcPackKind.cs
+    members: [Embedded, Folder, Zip]
+  - id: NacreCraft.ModApi.Wrapper.NcStartupArgs
+    title: Startup args
+    summary: The kernel-unrecognized command line tokens.
+    template: examples/NcStartup.cs
+    members: [Arguments]
