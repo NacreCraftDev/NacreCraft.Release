@@ -21,5 +21,13 @@ public static class __MOD_CLASS__
             if (args.TickCount % 100 == 0)
                 Log.Debug($"client tick {args.TickCount}");
         });
+
+        // The login packet has been applied and the client entered the world.
+        ClientEvents.Join.Subscribe(args =>
+            Log.Info($"joined {args.Dimension} seed={args.Seed}"));
+
+        // The server closed the connection in the login, configuration or play phase.
+        ClientEvents.Disconnect.Subscribe(args =>
+            Log.Info($"disconnected in {args.Phase}: {args.Reason}"));
     }
 }

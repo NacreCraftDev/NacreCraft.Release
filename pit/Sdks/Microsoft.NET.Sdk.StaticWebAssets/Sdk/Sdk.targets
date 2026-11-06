@@ -1,0 +1,40 @@
+<!--
+***********************************************************************************************
+Sdk.targets
+
+WARNING:  DO NOT MODIFY this file unless you are knowledgeable about MSBuild and have
+          created a backup copy.  Incorrect changes to this file will make it
+          impossible to load or build your projects from the command-line or the IDE.
+
+Copyright (c) .NET Foundation. All rights reserved.
+***********************************************************************************************
+-->
+<Project ToolsVersion="14.0">
+
+  <Import Sdk="Microsoft.NET.Sdk" Project="Sdk.targets" Condition="'$(_StaticWebAssetsSdkImportsMicrosoftNetSdk)' == 'true'" />
+
+  <PropertyGroup Condition="'$(StaticWebAssetsSdkCurrentVersionTargets)' == ''">
+    <StaticWebAssetsSdkCurrentVersionTargets>$(MSBuildThisFileDirectory)..\targets\Sdk.StaticWebAssets.CurrentVersion.targets</StaticWebAssetsSdkCurrentVersionTargets>
+  </PropertyGroup>
+
+  <Import Project="$(StaticWebAssetsSdkCurrentVersionTargets)" />
+
+  <Target Name="ResolveWebAssemblyProjectReferences" DependsOnTargets="PrepareProjectReferences">
+    <ItemGroup>
+      <!-- It is explicitly ok to take a dependency on _MSBuildProjectReferenceExistent as it is
+        something many other products already take a dependency on. -->
+      <_WebAssemblyProjectReferenceCandidate Include="@(_MSBuildProjectReferenceExistent)" Condition="'%(BuildReference)' == 'true' and '@(ProjectReferenceWithConfiguration)' != ''" />
+    </ItemGroup>
+
+    <MSBuild
+      Condition="'@(_WebAssemblyProjectReferenceCandidate)' != ''"
+      Projects="@(_WebAssemblyProjectReferenceCandidate)"
+      Targets="GetWebAssemblyProjectReference"
+      Properties="%(_WebAssemblyProjectReferenceCandidate.SetConfiguration);%(_WebAssemblyProjectReferenceCandidate.SetPlatform);%(_WebAssemblyProjectReferenceCandidate.SetTargetFramework)"
+      RemoveProperties="%(_WebAssemblyProjectReferenceCandidate.GlobalPropertiesToRemove);$(_GlobalPropertiesToRemoveFromProjectReferences)"
+      BuildInParallel="$(BuildInParallel)"
+      SkipNonexistentTargets="true">
+      <Output TaskParameter="TargetOutputs" ItemName="WebAssemblyProjectReference" />
+    </MSBuild>
+  </Target>
+</Project>

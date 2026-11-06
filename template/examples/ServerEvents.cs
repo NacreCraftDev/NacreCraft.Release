@@ -19,6 +19,10 @@ public sealed class __MOD_CLASS__
         // 50 ms and a slow callback drags the whole server down with it.
         ServerEvents.Tick.Subscribe(args => Log.Debug($"tick {args.TickCount}"));
 
+        // Lifecycle: starting -> started -> stopping -> stopped.
+        ServerEvents.Starting.Subscribe(_ => Log.Info("server starting"));
+        ServerEvents.Started.Subscribe(_ => Log.Info("server started"));
+
         // Player lifecycle.
         ServerEvents.PlayerJoin.Subscribe(args => Log.Info($"join {args.Player.Name}"));
         ServerEvents.PlayerLeave.Subscribe(args => Log.Info($"leave {args.Player.Name}"));
@@ -28,6 +32,15 @@ public sealed class __MOD_CLASS__
         // Block events. Player is null when the break was not caused by a player.
         ServerEvents.BlockBroken.Subscribe(args =>
             Log.Info($"broken at {args.Pos} by {args.Player?.Name ?? "environment"}"));
+
+        // Interaction events. PlayerBlockBreak is cancellable: set Cancelled to
+        // skip the kernel break, so no state change, effects or drops happen.
+        ServerEvents.PlayerBlockBreak.Subscribe(args =>
+        {
+            if (args.Pos.Y < 0) args.Cancelled = true;
+        });
+        ServerEvents.PlayerUseBlock.Subscribe(args =>
+            Log.Debug($"{args.Player.Name} used {args.Pos} face={args.Face}"));
 
         // Command registration runs once, after every built in command exists.
         ServerEvents.CommandRegister.Subscribe(args =>

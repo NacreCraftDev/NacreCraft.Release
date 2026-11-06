@@ -69,14 +69,14 @@ apis:
     members: [Ready, Arguments, IsReady, Has, Value, Values, Subscribe]
   - id: NacreCraft.ModApi.Wrapper.ServerEvents
     title: Server events
-    summary: Subscribe to lifecycle, player, chunk and block events.
+    summary: Subscribe to lifecycle, player, chunk, block, interaction and command events.
     template: examples/ServerEvents.cs
-    members: [Tick, Started, Stopping, CommandRegister, CommandExecuted, PlayerJoin, PlayerLeave, PlayerDisconnect, PlayerHurt, PlayerDeath, PlayerChat, ChunkLoaded, ChunkUnloaded, ChunkSaved, LevelTick, SavedDataSaving, BlockChanged, BlockBroken, ItemDropped]
+    members: [Starting, Started, Stopping, Stopped, Tick, CommandRegister, CommandExecuted, PlayerJoin, PlayerLeave, PlayerDisconnect, PlayerHurt, PlayerDeath, PlayerChat, ChunkLoaded, ChunkUnloaded, ChunkSaved, LevelTick, SavedDataSaving, BlockChanged, BlockBroken, ItemDropped, PlayerBlockBreak, PlayerUseBlock, PlayerUseItem, PlayerInteractEntity, PlayerPickItemFromBlock, PlayerPickItemFromEntity]
   - id: NacreCraft.ModApi.Wrapper.ClientEvents
     title: Client events
-    summary: Client side tick.
+    summary: Client tick, join and disconnect.
     template: examples/ClientEvents.cs
-    members: [Tick]
+    members: [Tick, Join, Disconnect]
   - id: NacreCraft.ModApi.Wrapper.NetworkEvents
     title: Network events
     summary: Inbound packets on both sides.
@@ -155,6 +155,52 @@ apis:
     summary: Hold one subscription, dispose it to unsubscribe.
     template: examples/NcEvent.cs
     members: [Subscribe]
+  - id: NacreCraft.ModApi.Capability.NcBlockApiLookup
+    title: Block api lookup
+    summary: Publish and query a capability for blocks and block entities.
+    template: examples/NcBlockApiLookup.cs
+    members: [Id, Get, RegisterForBlocks, RegisterForBlockEntities, RegisterFallback, Find]
+  - id: NacreCraft.ModApi.Capability.NcItemApiLookup
+    title: Item api lookup
+    summary: Publish and query a capability for item stacks.
+    template: examples/NcItemApiLookup.cs
+    members: [Id, Get, RegisterForItems, RegisterFallback, Find]
+  - id: NacreCraft.ModApi.Capability.NcEntityApiLookup
+    title: Entity api lookup
+    summary: Publish and query a capability for entity instances.
+    template: examples/NcEntityApiLookup.cs
+    members: [Id, Get, RegisterForTypes, RegisterFallback, Find]
+  - id: NacreCraft.ModApi.Capability.NcBlockApiProvider
+    title: Block api provider
+    summary: Resolve a service from a block state and its block entity.
+    template: examples/NcBlockApiLookup.cs
+  - id: NacreCraft.ModApi.Capability.NcBlockEntityApiProvider
+    title: Block entity api provider
+    summary: Resolve a service from a block entity alone.
+    template: examples/NcBlockApiLookup.cs
+  - id: NacreCraft.ModApi.Capability.NcItemApiProvider
+    title: Item api provider
+    summary: Resolve a service from an item stack.
+    template: examples/NcItemApiLookup.cs
+  - id: NacreCraft.ModApi.Capability.NcEntityApiProvider
+    title: Entity api provider
+    summary: Resolve a service from an entity instance.
+    template: examples/NcEntityApiLookup.cs
+  - id: NacreCraft.ModApi.Content.NcContent
+    title: Content registration
+    summary: Register custom blocks and items before the registries freeze.
+    template: examples/NcContent.cs
+    members: [Register, IsOpen, RegisteredBlocks, RegisteredItems]
+  - id: NacreCraft.ModApi.Content.ContentRegisterArgs
+    title: Content registration args
+    summary: The registration calls available inside the NcContent.Register callback.
+    template: examples/ContentRegisterArgs.cs
+    members: [RegisterBlock, RegisterItem]
+  - id: NacreCraft.ModApi.Content.NcBlockSettings
+    title: Block settings
+    summary: Build a block from data instead of overriding behavior.
+    template: examples/NcBlockSettings.cs
+    members: [Create, Property, DefaultState, Strength, LightLevel, RandomTicks, NoOcclusion, NoCollision]
   - id: NacreCraft.ModApi.Pack.NcModPacks
     title: Mod packs
     summary: Contribute a data or resource pack from a mod; it is staged before the pack repository scans.

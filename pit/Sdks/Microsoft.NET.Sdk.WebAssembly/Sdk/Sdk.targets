@@ -1,0 +1,69 @@
+<!--
+***********************************************************************************************
+Sdk.targets
+
+WARNING:  DO NOT MODIFY this file unless you are knowledgeable about MSBuild and have
+          created a backup copy.  Incorrect changes to this file will make it
+          impossible to load or build your projects from the command-line or the IDE.
+
+Copyright (c) .NET Foundation. All rights reserved.
+***********************************************************************************************
+-->
+<Project ToolsVersion="14.0">
+  <!-- For browser-wasm, we want to import StaticWebAssets SDK which imports SDK. -->
+  <!-- For wasi-wasm, we don't want to import StaticWebAssets SDK. -->
+  <Import Sdk="Microsoft.NET.Sdk.StaticWebAssets" Project="Sdk.targets" Condition="'$(RuntimeIdentifier)' != 'wasi-wasm' and '$(_WasmSdkImportsMicrosoftNETSdkStaticWebAssets)' == 'true'" />
+  <Import Sdk="Microsoft.NET.Sdk" Project="Sdk.targets" Condition="'$(RuntimeIdentifier)' == 'wasi-wasm' and '$(_WasmSdkImportsMicrosoftNetSdk)' == 'true'" />
+  <Import Project="TargetFrameworks.props" />
+
+  <PropertyGroup>
+    <_WasmEnableHotReload>$(WasmEnableHotReload)</_WasmEnableHotReload>
+    <_WasmEnableHotReload Condition="'$(_WasmEnableHotReload)' == '' and '$(Configuration)' != 'Debug'">false</_WasmEnableHotReload>
+    <_WasmEnableHotReload Condition="'$(_WasmEnableHotReload)' == '' and '$(TargetFrameworkIdentifier)' == '.NETCoreApp' and $([MSBuild]::VersionGreaterThanOrEquals('$(TargetFrameworkVersion)', '10.0'))">true</_WasmEnableHotReload>
+  </PropertyGroup>
+  <Target Name="_WasmImplicitlyReferenceHotReload" BeforeTargets="ResolveProjectStaticWebAssets" AfterTargets="ResolveStaticWebAssetsConfiguration" Condition="'$(_WasmEnableHotReload)' == 'true'">
+    <PropertyGroup>
+      <_WasmHotReloadTfm Condition="$([MSBuild]::VersionGreaterThanOrEquals('$(TargetFrameworkVersion)', '10.0'))">$(WasmAgentTargetFrameworkV10)</_WasmHotReloadTfm>
+      <_WasmHotReloadPath Condition="'$(_WasmHotReloadTfm)' != ''">$([MSBuild]::NormalizeDirectory($(MSBuildThisFileDirectory), '..', 'hotreload', $(_WasmHotReloadTfm)))</_WasmHotReloadPath>
+      <_WasmHotReloadIntermediatePath>$(IntermediateOutputPath)hotreload\</_WasmHotReloadIntermediatePath>
+    </PropertyGroup>
+
+    <!-- Copy the DLL to the intermediate folder to avoid duplicate identity when multiple projects reference the same SDK file.
+         The dotnet-watch WebAssembly initializer initializes the agent and activates browser tools. -->
+    <Copy
+      SourceFiles="$(_WasmHotReloadPath)Microsoft.DotNet.HotReload.WebAssembly.Browser.dll"
+      DestinationFolder="$(_WasmHotReloadIntermediatePath)"
+      SkipUnchangedFiles="true"
+      Condition="'$(_WasmHotReloadPath)' != ''" />
+
+    <ItemGroup Condition="'$(_WasmHotReloadPath)' != ''">
+      <ReferenceCopyLocalPaths Include="$(_WasmHotReloadIntermediatePath)Microsoft.DotNet.HotReload.WebAssembly.Browser.dll">
+        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+        <CopyToPublishDirectory>Never</CopyToPublishDirectory>
+      </ReferenceCopyLocalPaths>
+      <FileWrites Include="$(_WasmHotReloadIntermediatePath)Microsoft.DotNet.HotReload.WebAssembly.Browser.dll" />
+    </ItemGroup>
+  </Target>
+
+  <!-- Activates the dotnet-watch browser tools client. Applies to all target frameworks: on .NET 10+
+       this initializer loads the Hot Reload agent assembly above to apply managed code updates;
+       older versions use the runtime's own window.Blazor._internal apply API. The assets are produced by
+       Microsoft.NET.Sdk.StaticWebAssets.DotNetWatch.targets, which substitutes the target framework
+       specific tokens in the initializer template. -->
+  <PropertyGroup>
+    <DotNetWatchBrowserToolsAssetPrefix>Microsoft.NET.Sdk.WebAssembly.DotNetWatch</DotNetWatchBrowserToolsAssetPrefix>
+    <DotNetWatchBrowserToolsInitializerFile>$(MSBuildThisFileDirectory)DotNetWatch\Microsoft.NET.Sdk.WebAssembly.DotNetWatch.lib.module.js.template</DotNetWatchBrowserToolsInitializerFile>
+    <DotNetWatchBrowserToolsUseSdkHotReloadAgent>$(_WasmEnableHotReload)</DotNetWatchBrowserToolsUseSdkHotReloadAgent>
+    <DotNetWatchBrowserToolsUseSdkHotReloadAgent Condition="'$(DotNetWatchBrowserToolsUseSdkHotReloadAgent)' == ''">false</DotNetWatchBrowserToolsUseSdkHotReloadAgent>
+  </PropertyGroup>
+
+  <Import Sdk="Microsoft.NET.Sdk.Publish" Project="Sdk.targets" Condition="'$(_WasmSdkImportsMicrosoftNETSdkPublish)' == 'true'" />
+  <Import Project="$(_WebAssemblyTargetsFile)" Condition="'$(_WebAssemblyTargetsFile)' != ''" />
+
+  <Target Name="GetWebAssemblyProjectReference"
+          Returns="@(_WebAssemblyProjectReference)">
+    <ItemGroup>
+      <_WebAssemblyProjectReference Include="$(MSBuildProjectFullPath)" />
+    </ItemGroup>
+  </Target>
+</Project>
